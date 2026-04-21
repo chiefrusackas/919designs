@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&amp;family=Outfit:wght@100..900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "on-background": "#323233",
+                        "on-surface": "#323233",
+                        "inverse-primary": "#fc7127",
+                        "surface-variant": "#e4e2e2",
+                        "on-primary-fixed": "#491800",
+                        "tertiary-fixed": "#fea520",
+                        "surface-container-high": "#eae8e7",
+                        "primary-container": "#ffae89",
+                        "on-primary-fixed-variant": "#792d00",
+                        "surface-tint": "#a33f00",
+                        "tertiary": "#875400",
+                        "on-secondary-fixed-variant": "#6f507c",
+                        "primary-fixed-dim": "#ff996a",
+                        "outline": "#7b7a7a",
+                        "tertiary-dim": "#764900",
+                        "primary-fixed": "#ffae89",
+                        "error-container": "#fa7150",
+                        "secondary": "#735380",
+                        "on-error": "#fff7f6",
+                        "on-primary": "#fff7f5",
+                        "primary-dim": "#903700",
+                        "on-secondary-fixed": "#51345e",
+                        "error": "#aa371c",
+                        "surface-container": "#f0eded",
+                        "surface-container-lowest": "#ffffff",
+                        "inverse-surface": "#0e0e0e",
+                        "on-tertiary-container": "#502f00",
+                        "surface-container-low": "#f6f3f2",
+                        "on-tertiary-fixed-variant": "#5c3700",
+                        "on-tertiary-fixed": "#311c00",
+                        "on-secondary-container": "#654672",
+                        "secondary-fixed": "#f7d8ff",
+                        "secondary-fixed-dim": "#eec7fb",
+                        "secondary-dim": "#664773",
+                        "on-secondary": "#fff7fc",
+                        "surface-bright": "#fcf9f8",
+                        "on-error-container": "#671200",
+                        "surface": "#fcf9f8",
+                        "on-tertiary": "#fff7f3",
+                        "on-primary-container": "#6b2700",
+                        "tertiary-container": "#fea520",
+                        "background": "#fcf9f8",
+                        "outline-variant": "#b3b2b1",
+                        "error-dim": "#821a01",
+                        "primary": "#a33f00",
+                        "on-surface-variant": "#5f5f5f",
+                        "inverse-on-surface": "#9e9c9c",
+                        "surface-dim": "#dbdad9",
+                        "tertiary-fixed-dim": "#ee980a",
+                        "secondary-container": "#f7d8ff",
+                        "surface-container-highest": "#e4e2e2"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "fontFamily": {
+                        "headline": ["Outfit", "sans-serif"],
+                        "body": ["Sora", "sans-serif"],
+                        "label": ["Sora", "sans-serif"]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .sunset-gradient {
+            background: linear-gradient(135deg, #a33f00 0%, #ffae89 100%);
+        }
+        .glass-header {
+            background: rgba(252, 249, 248, 0.7);
+            backdrop-filter: blur(20px);
+        }
+        body {
+            min-height: max(884px, 100dvh);
+        }
+    </style>
+</head>
+<body class="bg-surface font-body text-on-surface">
+<!-- TopAppBar -->
+<header class="fixed top-0 w-full z-50 glass-header">
+<nav class="flex justify-between items-center px-8 py-4 max-w-full mx-auto">
+<div class="flex items-center gap-4">
+<span class="material-symbols-outlined text-orange-800 dark:text-orange-400" data-icon="menu">menu</span>
+<span class="text-2xl font-black text-[#a33f00] dark:text-[#ffae89] uppercase font-headline tracking-tighter">919designs</span>
+</div>
+<div class="hidden md:flex items-center gap-8">
+<a class="text-[#a33f00] dark:text-[#ffae89] font-bold border-b-2 border-[#a33f00] transition-colors duration-300" href="#">Gallery</a>
+<a class="text-[#735380] dark:text-[#e4e2e2] hover:text-[#a33f00] transition-colors duration-300" href="#">Custom</a>
+<a class="text-[#735380] dark:text-[#e4e2e2] hover:text-[#a33f00] transition-colors duration-300" href="#">Orders</a>
+<a class="text-[#735380] dark:text-[#e4e2e2] hover:text-[#a33f00] transition-colors duration-300" href="#">Profile</a>
+</div>
+<div class="w-10 h-10 rounded-full bg-surface-container-high flex items-center justify-center overflow-hidden border border-outline-variant/15">
+<img class="w-full h-full object-cover" data-alt="professional portrait of a creative designer with warm sunset lighting and soft focus background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDDdoubVrR2Q96_CfxAL7rg08hr2wz7TvDCU3dUdkqFlQ-HTVhSEZBK6w3AsMMrLc-dluWETrb1obUEetlhUnmjWLq8s-i9jl3E1S0z0Uxa_dKDSW2CWGj4uR9_tDvu6qeeQLQuCv2EWEbmBOd8tjPss3SgDaNkZZFFSrL-mwcFoRyopouhwfeN8f-rpZuIEQ73PCj3e1AGlLYC4nl8ox9W2u2pEKzfGOzAscwGSsf4MjCJRvy3gI9jE_TTz94YpGc0UrTC3G2mUonP"/>
+</div>
+</nav>
+</header>
+<main class="pt-24">
+<!-- Hero Section -->
+<section class="relative px-8 py-20 overflow-hidden">
+<div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-12 gap-12 items-center">
+<div class="md:col-span-7 z-10">
+<h1 class="font-headline text-5xl md:text-7xl font-extrabold tracking-tighter text-on-background mb-6 leading-[1.1]">
+                        Threaded with <span class="text-primary italic">NorCal</span> Precision.
+                    </h1>
+<p class="text-lg md:text-xl text-on-surface-variant max-w-xl mb-10 leading-relaxed font-body">
+                        From artisanal embroidery to high-definition DTF printing, we transform apparel into curated canvases for your brand's unique identity.
+                    </p>
+<div class="flex flex-wrap gap-4">
+<button class="sunset-gradient text-on-primary px-8 py-4 rounded-xl font-bold text-lg shadow-xl hover:scale-95 transition-transform duration-200">
+                            Start Custom Order
+                        </button>
+<button class="bg-surface-container-high text-primary px-8 py-4 rounded-xl font-bold text-lg hover:bg-surface-container-highest transition-colors">
+                            View Portfolio
+                        </button>
+</div>
+</div>
+<div class="md:col-span-5 relative">
+<div class="rounded-xl overflow-hidden shadow-2xl relative z-10 aspect-[4/5]">
+<img class="w-full h-full object-cover" data-alt="close-up of a high-end embroidery machine needle piercing through thick navy fabric with golden thread and warm studio lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAyIV3z1TbNh7ZkawN8rl6EYwnhYyjZ92kwLF413bFBgSyDf3aD7AhzpuboM7uzmnBudAWwAFQbecLU7KdGMhRaGRn2bHYMh5hvsXcsUIk8mXl0vwpb6l9JEVqJ8NrCVVh5esSW-vv4TLmSKpqC8IkRDxiUC3uPZCK_RbcdF8SLNuj2gvd0y1VL3hjm_JpT4dkAG33YOJcrVaV-ZwJqw87QzFH8GreZFfiG3v-bMbMmDp2G6XGalQtbUzFQa7Y1MQ9OSs4IMBwybQgS"/>
+</div>
+<!-- Decorative Silhouette -->
+<div class="absolute -bottom-10 -right-10 w-64 h-64 opacity-20 pointer-events-none">
+<span class="material-symbols-outlined text-[200px] text-primary" style="font-variation-settings: 'FILL' 1;">eco</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Services Bento Grid -->
+<section class="px-8 py-24 bg-surface-container-low">
+<div class="max-w-7xl mx-auto">
+<div class="mb-16">
+<h2 class="font-headline text-4xl font-bold tracking-tight text-on-background">Our Craft</h2>
+<p class="text-secondary font-medium tracking-widest uppercase text-sm mt-2">Precision meets Artistry</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<!-- Service Card 1 -->
+<div class="md:col-span-2 bg-surface-container-lowest p-10 rounded-xl flex flex-col md:flex-row gap-8 items-center shadow-sm">
+<div class="flex-1">
+<span class="material-symbols-outlined text-primary text-4xl mb-4" data-icon="architecture">architecture</span>
+<h3 class="font-headline text-3xl font-bold mb-4">Artisanal Embroidery</h3>
+<p class="text-on-surface-variant leading-relaxed mb-6">
+                                Rich, tactile, and timeless. Our embroidery process utilizes premium threads and high-density stitching to create logos that literally stand out.
+                            </p>
+<ul class="space-y-3">
+<li class="flex items-center gap-3 text-sm font-semibold text-secondary">
+<span class="material-symbols-outlined text-xs" style="font-variation-settings: 'FILL' 1;">circle</span>
+                                    Custom Digitizing
+                                </li>
+<li class="flex items-center gap-3 text-sm font-semibold text-secondary">
+<span class="material-symbols-outlined text-xs" style="font-variation-settings: 'FILL' 1;">circle</span>
+                                    3D Puff Effects
+                                </li>
+<li class="flex items-center gap-3 text-sm font-semibold text-secondary">
+<span class="material-symbols-outlined text-xs" style="font-variation-settings: 'FILL' 1;">circle</span>
+                                    Metallic &amp; Specialty Threads
+                                </li>
+</ul>
+</div>
+<div class="w-full md:w-64 h-64 rounded-lg overflow-hidden shrink-0">
+<img class="w-full h-full object-cover" data-alt="extreme close up of detailed embroidery on a high quality olive green jacket showing intricate thread patterns and texture" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBWIDTnPixJ1VLvnSOFBf8FPbwY5xGmgd6W4R9N06E8OsJ4CjjIaW7AFZjgLxtVnY_hjPV29FkpoTZ2ajQ8D2JqX9_Mu2V55_vd41erB3dDvpKzVF9D0G829AlQDruABLMMGX8MzU8ERvdEhWFV0zovOP7lQz8TJVG_dP5HAoFrxXX08BjNf6N7CCjiNIosYCUvcXU6xkEj0bs7HcHDG345CXNIXRItn8-9qEbABqi1G72WqFTOv5SQFlFsm8ljLCCY-a2En06LLbM1"/>
+</div>
+</div>
+<!-- Service Card 2 -->
+<div class="bg-surface-container-lowest p-10 rounded-xl shadow-sm border-t-4 border-primary">
+<span class="material-symbols-outlined text-primary text-4xl mb-4" data-icon="auto_awesome">auto_awesome</span>
+<h3 class="font-headline text-3xl font-bold mb-4">DTF Printing</h3>
+<p class="text-on-surface-variant leading-relaxed mb-6">
+                            Direct-to-Film (DTF) technology allows for vibrant, full-color gradients and razor-sharp details that traditional screen printing can't match.
+                        </p>
+<div class="mt-auto pt-6 border-t border-outline-variant/15">
+<span class="text-xs uppercase tracking-widest font-bold text-outline">Ideal for</span>
+<p class="text-primary font-bold">Complex Illustrations &amp; Photography</p>
+</div>
+</div>
+<!-- Small Highlight Card -->
+<div class="bg-sunset-gradient p-10 rounded-xl text-on-primary flex flex-col justify-center text-center">
+<h4 class="font-headline text-2xl font-bold mb-2">Sustainable Gear</h4>
+<p class="text-on-primary/80 text-sm">We exclusively source garments from eco-conscious manufacturers.</p>
+</div>
+<!-- Large Portfolio Showcase -->
+<div class="md:col-span-2 relative group overflow-hidden rounded-xl aspect-[16/7]">
+<img class="w-full h-full object-cover" data-alt="wide shot of a lifestyle apparel collection laid out on a wooden table during late afternoon golden hour with long shadows" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBD_JSnH_61dtzlzHwGpVhGR5HxBtwjf67IRgPFTcBeij8Ol03nn6XTOzTF4lOPJYqxP9ZzTT7ldV4Vbs0HJgmVVYkYYOP0RhlvlOe943FcK5V26NQFLfVTygNkS1lO7VXSf3Y_fk_xjfKsFW8PcO0Tmfq5ivzym8CfOdMXP01wZQdyX2qaLZ-OPSBpMFUy9aa7DsvV19ASuVDSzVw2er59lHnKXrOgO5m7v7fCHsprWoNp0z8ZxWIkPE6GK0jAu3-7_BEbVye-z9gW"/>
+<div class="absolute inset-0 bg-gradient-to-t from-on-background/80 to-transparent flex flex-col justify-end p-10">
+<h4 class="text-white font-headline text-3xl font-bold">The NorCal Series</h4>
+<p class="text-white/70">Custom uniforms for the modern lifestyle brand.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Process Section -->
+<section class="px-8 py-24 bg-surface">
+<div class="max-w-5xl mx-auto">
+<div class="text-center mb-20">
+<h2 class="font-headline text-4xl font-bold text-on-background mb-4">How We Perfect It</h2>
+<div class="h-1 w-24 bg-primary mx-auto rounded-full"></div>
+</div>
+<div class="space-y-24">
+<!-- Step 1 -->
+<div class="flex flex-col md:flex-row items-center gap-16">
+<div class="flex-1 order-2 md:order-1">
+<div class="text-primary-container font-black text-6xl mb-4 font-headline opacity-50">01</div>
+<h3 class="font-headline text-3xl font-bold mb-4">Curation &amp; Design</h3>
+<p class="text-on-surface-variant text-lg leading-relaxed">
+                                We start by understanding your brand's soul. Our design team audits your artwork to ensure it's optimized for the specific tension of embroidery or the color space of DTF.
+                            </p>
+</div>
+<div class="flex-1 order-1 md:order-2">
+<div class="aspect-video rounded-xl bg-surface-container-high overflow-hidden">
+<img class="w-full h-full object-cover" data-alt="overhead view of a graphic designer's workspace with a tablet showing vector apparel designs and coffee with warm ambient light" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA3m-IvhV1Y9AsTGkGWREMdnIOp9W6D2MoQHAdsEj8Pl8A19mWESFicMrbH_HfJ2qbh_fIH7urUrbFmOByrweRo-lDVjX3-2eX8VxTMzWU29zroF21p2LXhcNo_5R-3NtNMCtGVXhAJUJ-qK-J43-AOOnv4E9oiqQmRhywLe6KGYv8GLlWr_9xgn9_9VytkuIMEN5uohzPI-fBuwJnaRCsZZ64TvwnencyuuRFPhFTT3JB-HpcVgu0iDRw_fb141mfX1FOndbWJORRW"/>
+</div>
+</div>
+</div>
+<!-- Step 2 -->
+<div class="flex flex-col md:flex-row items-center gap-16">
+<div class="flex-1">
+<div class="aspect-video rounded-xl bg-surface-container-high overflow-hidden">
+<img class="w-full h-full object-cover" data-alt="shelves full of colorful thread spools in a high-end workshop arranged in a rainbow gradient under soft warm lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD8ODWJgPYAuuyHGAiPay7PpZ-DCUROyJQwrh2HgQe5jVM3UE6L8iox6bagQsVkPMyBhwkXyf6sEo8gVXoPxzeilE5IhPkoH-2VBC4yvleoDQCc_mm3Aqnn-2DvMKCFH7qdKLRgkUMKyNXi36UVAXfypCx9DQui0zXKh6uIhnRGcAdiJH7HVtqn0CLxrQkmWWOFu0Me3zc4V3TOtvWfLS9G_NljEPeRtTOh1743kvER8Pea5WByMNze7SSc3Q16EbeIQ_CVZeyTaEoq"/>
+</div>
+</div>
+<div class="flex-1">
+<div class="text-primary-container font-black text-6xl mb-4 font-headline opacity-50">02</div>
+<h3 class="font-headline text-3xl font-bold mb-4">Precision Crafting</h3>
+<p class="text-on-surface-variant text-lg leading-relaxed">
+                                Using industry-leading Tajima machinery and state-of-the-art DTF presses, your apparel is crafted in our NorCal atelier with relentless attention to stitch count and color accuracy.
+                            </p>
+</div>
+</div>
+<!-- Step 3 -->
+<div class="flex flex-col md:flex-row items-center gap-16">
+<div class="flex-1 order-2 md:order-1">
+<div class="text-primary-container font-black text-6xl mb-4 font-headline opacity-50">03</div>
+<h3 class="font-headline text-3xl font-bold mb-4">Quality &amp; Delivery</h3>
+<p class="text-on-surface-variant text-lg leading-relaxed">
+                                Every piece undergoes a triple-point inspection. We trim every loose thread and steam every garment before it's eco-packed and shipped to your doorstep.
+                            </p>
+</div>
+<div class="flex-1 order-1 md:order-2">
+<div class="aspect-video rounded-xl bg-surface-container-high overflow-hidden">
+<img class="w-full h-full object-cover" data-alt="crisply folded finished hoodies in a neat stack with a high-end minimalist tag attached showing professional quality finish" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDoFlUXvaYvNBy8Rrq2xHfqu-HZIUO7DSUQpasjFKm74yGg6cFpFHwM7sGadE5KgswpfphSsTcXrdKhIDEz-7QdHNjNlFLQuyNd1ba4wTXr9EsxQoFXKrqpmpPzm22FUD2fa8z4G20z0YIvfROLFZ2Mnke2giA0HnoswbhY8N7282v2823ZoLfSK5t9Fs60gkxo6KddYjWrQn4DLroelD1mfrAGIMjZm_TmKt5jV5zZ4g7ONBSMddCH2jdu97l-0Z_pAsbMk24LRIs8"/>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- CTA Section -->
+<section class="px-8 py-24 mb-20">
+<div class="max-w-6xl mx-auto bg-surface-container-highest rounded-[2rem] p-12 md:p-24 text-center relative overflow-hidden">
+<div class="absolute top-0 right-0 w-96 h-96 bg-primary/5 rounded-full -translate-y-1/2 translate-x-1/2 blur-3xl"></div>
+<div class="relative z-10">
+<h2 class="font-headline text-4xl md:text-6xl font-black text-on-background mb-8 tracking-tighter">Ready to elevate <br/>your <span class="text-primary">brand?</span></h2>
+<p class="text-on-surface-variant text-xl mb-12 max-w-2xl mx-auto">Join the hundreds of local brands who trust 919designs for their premium custom apparel needs.</p>
+<button class="sunset-gradient text-on-primary px-12 py-5 rounded-full font-bold text-xl shadow-2xl hover:scale-105 transition-transform">
+                        Get a Free Quote
+                    </button>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="w-full mt-auto bg-surface-container-low">
+<div class="flex flex-col md:flex-row justify-between items-center px-12 py-16 gap-8 w-full">
+<div class="flex flex-col items-center md:items-start gap-4">
+<span class="text-xl font-bold font-headline text-[#a33f00]">919designs</span>
+<p class="font-body text-sm leading-relaxed text-[#735380] dark:text-[#e4e2e2]">© 2024 919designs. Crafted with precision in NorCal.</p>
+</div>
+<div class="flex gap-8">
+<a class="font-body text-sm text-[#735380] dark:text-[#e4e2e2] hover:text-[#a33f00] transition-all duration-300" href="#">Process</a>
+<a class="font-body text-sm text-[#735380] dark:text-[#e4e2e2] hover:text-[#a33f00] transition-all duration-300" href="#">Portfolio</a>
+<a class="font-body text-sm text-[#735380] dark:text-[#e4e2e2] hover:text-[#a33f00] transition-all duration-300" href="#">Sustainability</a>
+<a class="font-body text-sm text-[#735380] dark:text-[#e4e2e2] hover:text-[#a33f00] transition-all duration-300" href="#">Contact</a>
+</div>
+</div>
+</footer>
+<!-- BottomNavBar (Mobile only) -->
+<nav class="md:hidden fixed bottom-0 left-0 w-full flex justify-around items-center px-4 pb-6 pt-2 bg-surface dark:bg-[#323233] shadow-[0_-10px_30px_rgba(50,50,51,0.06)] rounded-t-xl z-50">
+<a class="flex flex-col items-center justify-center text-[#735380] dark:text-[#e4e2e2] opacity-70 hover:opacity-100 transition-opacity" href="#">
+<span class="material-symbols-outlined" data-icon="auto_awesome">auto_awesome</span>
+<span class="font-label text-[10px] uppercase tracking-widest font-semibold mt-1">Gallery</span>
+</a>
+<a class="flex flex-col items-center justify-center sunset-gradient text-white rounded-xl px-4 py-1" href="#">
+<span class="material-symbols-outlined" data-icon="architecture">architecture</span>
+<span class="font-label text-[10px] uppercase tracking-widest font-semibold mt-1">Custom</span>
+</a>
+<a class="flex flex-col items-center justify-center text-[#735380] dark:text-[#e4e2e2] opacity-70 hover:opacity-100 transition-opacity" href="#">
+<span class="material-symbols-outlined" data-icon="shopping_bag">shopping_bag</span>
+<span class="font-label text-[10px] uppercase tracking-widest font-semibold mt-1">Orders</span>
+</a>
+<a class="flex flex-col items-center justify-center text-[#735380] dark:text-[#e4e2e2] opacity-70 hover:opacity-100 transition-opacity" href="#">
+<span class="material-symbols-outlined" data-icon="person">person</span>
+<span class="font-label text-[10px] uppercase tracking-widest font-semibold mt-1">Profile</span>
+</a>
+</nav>
+</body></html>

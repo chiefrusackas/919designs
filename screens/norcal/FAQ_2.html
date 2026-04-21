@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&amp;family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "on-background": "#323233",
+                    "on-surface": "#323233",
+                    "inverse-primary": "#fc7127",
+                    "surface-variant": "#e4e2e2",
+                    "on-primary-fixed": "#491800",
+                    "tertiary-fixed": "#fea520",
+                    "surface-container-high": "#eae8e7",
+                    "primary-container": "#ffae89",
+                    "on-primary-fixed-variant": "#792d00",
+                    "surface-tint": "#a33f00",
+                    "tertiary": "#875400",
+                    "on-secondary-fixed-variant": "#6f507c",
+                    "primary-fixed-dim": "#ff996a",
+                    "outline": "#7b7a7a",
+                    "tertiary-dim": "#764900",
+                    "primary-fixed": "#ffae89",
+                    "error-container": "#fa7150",
+                    "secondary": "#735380",
+                    "on-error": "#fff7f6",
+                    "on-primary": "#fff7f5",
+                    "primary-dim": "#903700",
+                    "on-secondary-fixed": "#51345e",
+                    "error": "#aa371c",
+                    "surface-container": "#f0eded",
+                    "surface-container-lowest": "#ffffff",
+                    "inverse-surface": "#0e0e0e",
+                    "on-tertiary-container": "#502f00",
+                    "surface-container-low": "#f6f3f2",
+                    "on-tertiary-fixed-variant": "#5c3700",
+                    "on-tertiary-fixed": "#311c00",
+                    "on-secondary-container": "#654672",
+                    "secondary-fixed": "#f7d8ff",
+                    "secondary-fixed-dim": "#eec7fb",
+                    "secondary-dim": "#664773",
+                    "on-secondary": "#fff7fc",
+                    "surface-bright": "#fcf9f8",
+                    "on-error-container": "#671200",
+                    "surface": "#fcf9f8",
+                    "on-tertiary": "#fff7f3",
+                    "on-primary-container": "#6b2700",
+                    "tertiary-container": "#fea520",
+                    "background": "#fcf9f8",
+                    "outline-variant": "#b3b2b1",
+                    "error-dim": "#821a01",
+                    "primary": "#a33f00",
+                    "on-surface-variant": "#5f5f5f",
+                    "inverse-on-surface": "#9e9c9c",
+                    "surface-dim": "#dbdad9",
+                    "tertiary-fixed-dim": "#ee980a",
+                    "secondary-container": "#f7d8ff",
+                    "surface-container-highest": "#e4e2e2"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.25rem",
+                    "lg": "0.5rem",
+                    "xl": "0.75rem",
+                    "full": "9999px"
+            },
+            "fontFamily": {
+                    "headline": ["Fraunces", "serif"],
+                    "body": ["Plus Jakarta Sans", "sans-serif"],
+                    "label": ["Plus Jakarta Sans", "sans-serif"]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .sunset-gradient {
+            background: linear-gradient(135deg, #a33f00 0%, #ffae89 100%);
+        }
+        .sky-fade {
+            background: linear-gradient(to bottom, #7353800a 0%, #fcf9f8 100%);
+        }
+        body {
+            min-height: max(884px, 100dvh);
+        }
+    </style>
+</head>
+<body class="bg-surface font-body text-on-surface selection:bg-primary-container selection:text-on-primary-container overflow-x-hidden">
+<!-- TopAppBar -->
+<header class="fixed top-0 w-full z-50 bg-[#fcf9f8]/70 backdrop-blur-md">
+<div class="flex justify-between items-center px-8 py-4 max-w-full mx-auto">
+<div class="flex items-center gap-4">
+<span class="material-symbols-outlined text-orange-800" data-icon="menu">menu</span>
+<span class="text-2xl font-black text-[#a33f00] uppercase font-headline tracking-tighter">919designs</span>
+</div>
+<nav class="hidden md:flex gap-8 items-center">
+<a class="font-label text-[10px] uppercase tracking-[0.2em] font-bold text-[#735380] hover:text-[#a33f00] transition-colors duration-300" href="#">Gallery</a>
+<a class="font-label text-[10px] uppercase tracking-[0.2em] font-bold text-[#735380] hover:text-[#a33f00] transition-colors duration-300" href="#">Custom</a>
+<a class="font-label text-[10px] uppercase tracking-[0.2em] font-bold text-[#735380] hover:text-[#a33f00] transition-colors duration-300" href="#">Orders</a>
+<div class="w-8 h-8 rounded-full sunset-gradient flex items-center justify-center text-white text-xs font-bold font-body">JD</div>
+</nav>
+</div>
+</header>
+<main class="pt-32 pb-24 min-h-screen">
+<!-- Hero Section -->
+<section class="px-8 max-w-7xl mx-auto mb-20 flex flex-col md:flex-row gap-12 items-end">
+<div class="md:w-2/3">
+<p class="text-primary font-bold tracking-[0.3em] uppercase text-[10px] mb-4 font-label">Precision Assistance</p>
+<h1 class="font-headline text-5xl md:text-8xl font-black text-on-background tracking-tight leading-[0.9] mb-8">
+                    Common <br/><span class="text-secondary italic font-normal">Questions.</span>
+</h1>
+<p class="text-lg text-on-surface-variant max-w-md leading-relaxed font-body">
+                    Everything you need to know about our atelier process, from technical file requirements to our NorCal lead times.
+                </p>
+</div>
+<div class="md:w-1/3 w-full">
+<div class="relative rounded-xl overflow-hidden aspect-[4/3] group">
+<img class="object-cover w-full h-full transform group-hover:scale-105 transition-transform duration-700" data-alt="Close-up of golden embroidery thread being fed through a vintage sewing machine in a sun-drenched NorCal studio" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDhSJ3Wd-2vPvE1ILf2D9zpXGj2ykce62-1HFYzNYQRJAxLjxa-caa14MRR-vecY2qGjaX3Sfp_XyKFM6r9lE_e0wWfewSBrSC4Zv__Zftc-x0CITanXPx0RWv7nt5XpH1pvuBoLd47iN7cNKLcnVQm90pRH-HoPLKsHh8DC5AmUp9gzlNgOI6eygkHeRQduPvvbGE-XhiYbuj2ni51GmAVcbhxCg533Aq09EGSSzTCdHNNShSGRQi-1fJ-ooeJq7h8h_HwfnJMSqwo"/>
+<div class="absolute inset-0 bg-primary/10 mix-blend-multiply"></div>
+</div>
+</div>
+</section>
+<!-- FAQ Content: Asymmetric Layout -->
+<section class="px-8 max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-12 gap-16">
+<!-- Technical Specs (Offset Right) -->
+<div class="md:col-start-2 md:col-span-5 flex flex-col gap-12">
+<div class="space-y-6">
+<div class="flex items-center gap-4">
+<span class="material-symbols-outlined text-primary" data-icon="description">description</span>
+<h2 class="font-headline text-3xl font-bold tracking-tight">File Formats</h2>
+</div>
+<div class="bg-surface-container-low p-8 rounded-xl space-y-6">
+<article>
+<h3 class="font-bold text-on-background mb-2 font-body text-base">What file types do you accept?</h3>
+<p class="text-on-surface-variant text-sm leading-relaxed font-body">For the highest precision, we prefer vector files (.AI, .EPS, or .PDF). For raster images like high-res logos, we require a minimum of 300 DPI at full print size.</p>
+</article>
+<article>
+<h3 class="font-bold text-on-background mb-2 font-body text-base">Do you offer digitizing services?</h3>
+<p class="text-on-surface-variant text-sm leading-relaxed font-body">Absolutely. We convert your artwork into stitch-ready files in-house to ensure every thread path aligns with our quality standards.</p>
+</article>
+</div>
+</div>
+<div class="space-y-6">
+<div class="flex items-center gap-4">
+<span class="material-symbols-outlined text-primary" data-icon="inventory_2">inventory_2</span>
+<h2 class="font-headline text-3xl font-bold tracking-tight">Orders &amp; Minimums</h2>
+</div>
+<div class="bg-surface-container-low p-8 rounded-xl space-y-6">
+<article>
+<h3 class="font-bold text-on-background mb-2 font-body text-base">Is there a minimum order quantity?</h3>
+<p class="text-on-surface-variant text-sm leading-relaxed font-body">Our standard minimum for custom embroidery is 12 units. For large-scale precision prints, we typically start at 24 units per design.</p>
+</article>
+<article>
+<h3 class="font-bold text-on-background mb-2 font-body text-base">Can I provide my own garments?</h3>
+<p class="text-on-surface-variant text-sm leading-relaxed font-body">To ensure the integrity of our craftsmanship, we prefer to source from our curated catalog of premium textiles, but we review client-provided items on a case-by-case basis.</p>
+</article>
+</div>
+</div>
+</div>
+<!-- Lead Times & Shipping (Offset Left) -->
+<div class="md:col-span-5 flex flex-col gap-12 md:mt-24">
+<div class="space-y-6">
+<div class="flex items-center gap-4">
+<span class="material-symbols-outlined text-primary" data-icon="schedule">schedule</span>
+<h2 class="font-headline text-3xl font-bold tracking-tight">Lead Times</h2>
+</div>
+<div class="bg-surface-container-highest p-8 rounded-xl space-y-6">
+<article>
+<h3 class="font-bold text-on-background mb-2 font-body text-base">How long does an order take?</h3>
+<p class="text-on-surface-variant text-sm leading-relaxed font-body">Our standard production window is 10-14 business days following final proof approval. During high-demand seasons, this may extend slightly.</p>
+</article>
+<article>
+<h3 class="font-bold text-on-background mb-2 font-body text-base">Do you offer rush production?</h3>
+<p class="text-on-surface-variant text-sm leading-relaxed font-body">Yes. We reserve a limited number of "Precision Slots" each week for urgent needs. Please contact us directly for availability and rush fees.</p>
+</article>
+</div>
+</div>
+<!-- Featured Card -->
+<div class="sunset-gradient p-1 rounded-xl shadow-2xl">
+<div class="bg-surface p-8 rounded-lg">
+<h3 class="font-headline text-2xl font-bold text-primary mb-4">Still have questions?</h3>
+<p class="text-sm text-on-surface-variant mb-6 font-body">Our studio team is available Monday through Friday for detailed consultations on your specific project needs.</p>
+<button class="w-full py-4 sunset-gradient text-white rounded-xl font-bold text-sm tracking-widest uppercase hover:opacity-90 transition-opacity font-label">
+                            Start a Conversation
+                        </button>
+</div>
+</div>
+</div>
+</section>
+<!-- Decorative Precision Element -->
+<div class="mt-32 px-8 flex justify-center opacity-20 pointer-events-none">
+<span class="material-symbols-outlined text-[120px] text-tertiary" data-icon="grid_guides">grid_guides</span>
+</div>
+</main>
+<!-- Footer -->
+<footer class="bg-[#f6f3f2] w-full mt-auto">
+<div class="flex flex-col md:flex-row justify-between items-center px-12 py-16 gap-8 w-full">
+<div class="flex flex-col gap-4">
+<span class="text-xl font-black font-headline text-[#a33f00] tracking-tighter uppercase">919designs</span>
+<p class="font-body text-sm leading-relaxed text-[#735380]">© 2024 919designs. Crafted with precision in NorCal.</p>
+</div>
+<div class="flex gap-8">
+<a class="font-label text-xs tracking-widest uppercase text-[#735380] hover:text-[#a33f00] transition-all duration-300" href="#">Process</a>
+<a class="font-label text-xs tracking-widest uppercase text-[#735380] hover:text-[#a33f00] transition-all duration-300" href="#">Portfolio</a>
+<a class="font-label text-xs tracking-widest uppercase text-[#735380] hover:text-[#a33f00] transition-all duration-300" href="#">Sustainability</a>
+<a class="font-label text-xs tracking-widest uppercase text-[#735380] hover:text-[#a33f00] transition-all duration-300" href="#">Contact</a>
+</div>
+</div>
+</footer>
+<!-- BottomNavBar (Mobile Only) -->
+<nav class="md:hidden fixed bottom-0 left-0 w-full flex justify-around items-center px-4 pb-6 pt-2 bg-[#fcf9f8] rounded-t-xl z-50 shadow-[0_-10px_30px_rgba(50,50,51,0.06)]">
+<div class="flex flex-col items-center justify-center text-[#735380] opacity-70">
+<span class="material-symbols-outlined" data-icon="auto_awesome">auto_awesome</span>
+<span class="font-label text-[10px] uppercase tracking-widest font-bold mt-1">Gallery</span>
+</div>
+<div class="flex flex-col items-center justify-center text-[#735380] opacity-70">
+<span class="material-symbols-outlined" data-icon="architecture">architecture</span>
+<span class="font-label text-[10px] uppercase tracking-widest font-bold mt-1">Custom</span>
+</div>
+<div class="flex flex-col items-center justify-center text-[#735380] opacity-70">
+<span class="material-symbols-outlined" data-icon="shopping_bag">shopping_bag</span>
+<span class="font-label text-[10px] uppercase tracking-widest font-bold mt-1">Orders</span>
+</div>
+<div class="flex flex-col items-center justify-center text-[#735380] opacity-70">
+<span class="material-symbols-outlined" data-icon="person">person</span>
+<span class="font-label text-[10px] uppercase tracking-widest font-bold mt-1">Profile</span>
+</div>
+</nav>
+</body></html>

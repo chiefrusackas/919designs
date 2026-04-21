@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@400..800&amp;family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "on-background": "#323233",
+                    "on-surface": "#323233",
+                    "inverse-primary": "#fc7127",
+                    "surface-variant": "#e4e2e2",
+                    "on-primary-fixed": "#491800",
+                    "tertiary-fixed": "#fea520",
+                    "surface-container-high": "#eae8e7",
+                    "primary-container": "#ffae89",
+                    "on-primary-fixed-variant": "#792d00",
+                    "surface-tint": "#a33f00",
+                    "tertiary": "#875400",
+                    "on-secondary-fixed-variant": "#6f507c",
+                    "primary-fixed-dim": "#ff996a",
+                    "outline": "#7b7a7a",
+                    "tertiary-dim": "#764900",
+                    "primary-fixed": "#ffae89",
+                    "error-container": "#fa7150",
+                    "secondary": "#735380",
+                    "on-error": "#fff7f6",
+                    "on-primary": "#fff7f5",
+                    "primary-dim": "#903700",
+                    "on-secondary-fixed": "#51345e",
+                    "error": "#aa371c",
+                    "surface-container": "#f0eded",
+                    "surface-container-lowest": "#ffffff",
+                    "inverse-surface": "#0e0e0e",
+                    "on-tertiary-container": "#502f00",
+                    "surface-container-low": "#f6f3f2",
+                    "on-tertiary-fixed-variant": "#5c3700",
+                    "on-tertiary-fixed": "#311c00",
+                    "on-secondary-container": "#654672",
+                    "secondary-fixed": "#f7d8ff",
+                    "secondary-fixed-dim": "#eec7fb",
+                    "secondary-dim": "#664773",
+                    "on-secondary": "#fff7fc",
+                    "surface-bright": "#fcf9f8",
+                    "on-error-container": "#671200",
+                    "surface": "#fcf9f8",
+                    "on-tertiary": "#fff7f3",
+                    "on-primary-container": "#6b2700",
+                    "tertiary-container": "#fea520",
+                    "background": "#fcf9f8",
+                    "outline-variant": "#b3b2b1",
+                    "error-dim": "#821a01",
+                    "primary": "#a33f00",
+                    "on-surface-variant": "#5f5f5f",
+                    "inverse-on-surface": "#9e9c9c",
+                    "surface-dim": "#dbdad9",
+                    "tertiary-fixed-dim": "#ee980a",
+                    "secondary-container": "#f7d8ff",
+                    "surface-container-highest": "#e4e2e2"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.25rem",
+                    "lg": "0.5rem",
+                    "xl": "0.75rem",
+                    "full": "9999px"
+            },
+            "fontFamily": {
+                    "headline": ["Syne", "sans-serif"],
+                    "body": ["Plus Jakarta Sans", "sans-serif"],
+                    "label": ["Plus Jakarta Sans", "sans-serif"]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .sunset-gradient {
+            background: linear-gradient(135deg, #a33f00 0%, #ffae89 100%);
+        }
+        .sky-fade {
+            background: linear-gradient(to bottom, #735380 0%, #fcf9f8 100%);
+        }
+        body {
+            min-height: max(884px, 100dvh);
+        }
+    </style>
+</head>
+<body class="bg-background text-on-background font-body selection:bg-primary-container selection:text-on-primary-container">
+<!-- TopAppBar -->
+<header class="fixed top-0 w-full z-50 bg-[#fcf9f8]/70 dark:bg-[#323233]/70 backdrop-blur-md">
+<nav class="flex justify-between items-center px-8 py-4 max-w-full mx-auto">
+<div class="flex items-center gap-4">
+<span class="material-symbols-outlined text-orange-800 dark:text-orange-400">menu</span>
+<span class="text-2xl font-extrabold text-[#a33f00] dark:text-[#ffae89] uppercase font-headline tracking-tighter">919designs</span>
+</div>
+<div class="hidden md:flex gap-8 items-center font-headline tracking-tighter font-bold">
+<a class="text-[#a33f00] dark:text-[#ffae89] font-bold border-b-2 border-[#a33f00] hover:text-[#a33f00] transition-colors duration-300" href="#">Gallery</a>
+<a class="text-[#735380] dark:text-[#e4e2e2] hover:text-[#a33f00] transition-colors duration-300" href="#">Custom</a>
+<a class="text-[#735380] dark:text-[#e4e2e2] hover:text-[#a33f00] transition-colors duration-300" href="#">Orders</a>
+<a class="text-[#735380] dark:text-[#e4e2e2] hover:text-[#a33f00] transition-colors duration-300" href="#">Process</a>
+</div>
+<div class="w-10 h-10 rounded-full bg-surface-container-high overflow-hidden border-2 border-primary-container">
+<img alt="Brand Logo Silhouette" data-alt="minimalist silhouette of a coastal palm tree against a warm golden gradient background in a circular frame" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCF0D9C42hPZIX5pJQhZkdx6voK5XSLNqWGsrxC3n90SbAc1gi9-_Pa2Gd6Gbq3ltOIshNTCU1bvQmHN-Rpa2pDPOEWIYQlvx4JQaNAUUghtLEcHEEMv8jVK9MYuxvpWUghM5apum6dzvWB1tT6rC1v6lTxzZT6JcxgIVelzLFnOgOyVAGawDwRoaTFORDwcJU8BEzqLHLXTg66c71mVFvk13QX0aVUNhXRFfnbMyuwOLcYjtY07EQjt26c6yjOg2HdwUfJUMdtfyaX"/>
+</div>
+</nav>
+</header>
+<main class="pt-20">
+<!-- Hero Section -->
+<section class="relative h-[751px] flex items-center overflow-hidden px-8 md:px-20">
+<div class="absolute inset-0 z-0">
+<img class="w-full h-full object-cover" data-alt="atmospheric panoramic view of a California beach at sunset with deep orange and purple skies and dark palm silhouettes" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBW8wYp_xkebLFk19RX9lcm3llsDzRZi7ISHznF2b1eFVkd0Xxk_2-tvBtb62EIl6-8mxidlBAWIuXdagjnG_caTd_8R57L0K7ionht4uRQZTeVW1q8sTC6Ho8w__Ef1fvDV9dirCgoQeZi7C2EN48YotbgcEMjMknD4M6cMRKFObd_quGwMp5NSCKvFgkVL8kBI7V3ckXpTyvp7mh59UZINpOz-z4nSTYm9_lyLDc2IoslleqQRDWlWRQ6kKqLCalz6T_1z2_wGvSD"/>
+<div class="absolute inset-0 bg-gradient-to-r from-background via-background/40 to-transparent"></div>
+</div>
+<div class="relative z-10 max-w-3xl">
+<span class="inline-block px-4 py-1 mb-6 rounded-full bg-primary-container/20 text-primary font-label text-xs uppercase tracking-[0.2em] font-bold">NorCal Precision Atelier</span>
+<h1 class="text-6xl md:text-8xl font-headline font-extrabold text-on-background tracking-tighter leading-[0.9] mb-8">
+                Golden State <br/> <span class="text-primary italic">Precision.</span>
+</h1>
+<p class="text-xl md:text-2xl text-on-surface-variant max-w-xl mb-10 leading-relaxed font-medium">
+                Merging the mathematical exactness of embroidery with the organic, soft-focus beauty of a Pacific sunset. 
+            </p>
+<div class="flex gap-4">
+<button class="sunset-gradient text-on-primary px-8 py-4 rounded-xl font-headline font-bold text-lg hover:scale-95 transition-transform duration-200">
+                    Start Your Project
+                </button>
+<button class="bg-surface-container-high text-on-surface px-8 py-4 rounded-xl font-headline font-bold text-lg hover:bg-surface-container-highest transition-colors">
+                    View Lookbook
+                </button>
+</div>
+</div>
+</section>
+<!-- Featured Work (Bento Grid) -->
+<section class="py-24 px-8 md:px-20 bg-surface">
+<div class="flex flex-col md:flex-row justify-between items-end mb-16 gap-8">
+<div class="max-w-xl">
+<h2 class="text-4xl md:text-5xl font-headline font-extrabold tracking-tighter mb-4">The Art of the Stitch</h2>
+<p class="text-on-surface-variant text-lg font-medium">High-fidelity embroidery and DTF printing curated for brands that demand a tactile, premium finish.</p>
+</div>
+<div class="text-primary font-headline font-bold text-lg border-b-2 border-primary-fixed-dim cursor-pointer">
+                Explore Gallery
+            </div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-12 gap-8 h-auto md:h-[900px]">
+<div class="md:col-span-8 bg-surface-container-low rounded-xl overflow-hidden group relative">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="close-up of intricate gold thread embroidery on high-quality white linen fabric showing detailed texture and light reflection" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDpNtq1qvL5JCec4GackfTmjUysGCBxBVcnMWiWJIQT3SyQWlrMbrMfZcJrxmIUUE7Qi41mr34fyA0EGQl5eekEKuvMlijobwT6zIAvzj0y3UJ9DBztIFDgCgt-crjsSBz_Xd0ulIDi4Sv-fOh65qt2eBNZQfYnABUYh7oHsLPmrDUdY6Y0JSpXaCewO2gRIxI_DKMOhKDsxRV6l7fYuzCppoi4W0334YaUrfNbnhnSY4clSUbYbYKFCNzPa6cFnTQ2rsXWfN97Hi2b"/>
+<div class="absolute bottom-0 left-0 p-10 bg-gradient-to-t from-on-background/80 to-transparent w-full">
+<h3 class="text-white text-3xl font-headline font-bold">Heirloom Quality</h3>
+<p class="text-white/80 text-lg font-medium">Precision embroidery for heritage garments.</p>
+</div>
+</div>
+<div class="md:col-span-4 bg-surface-container-highest rounded-xl overflow-hidden group relative">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="vibrant DTF print being applied to a cotton t-shirt with rich saturated colors and sharp edges in a bright workshop" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC9qcwlHSO7jTDeyKKViFM2HkjxLju4noYMRx-IqqYiMCgpid7iJSjPI-pta36XR8d88NcEPinRovgkuKCFZUU2NS8a4XTv7rdbJ_xtm9IK0VgZ6h3GOqYscpSOQaWrc7B0C004B-v3ruN2E5KbmejWoDaLxgxFrSAylY1YYlq1t2j1QbG_QsCWAt2iIM3amio4JZQuUBE5u_eFveJberEpg9Sag2nufFVOJiwGGpDTJY7wG_gHPJDuj8T8RzUzBSJGBihngSn3ARD1"/>
+<div class="absolute inset-0 bg-secondary/20 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
+<span class="bg-white text-primary px-6 py-3 rounded-full font-bold font-headline">DTF Printing</span>
+</div>
+</div>
+<div class="md:col-span-4 bg-surface-container-low rounded-xl overflow-hidden group">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="flat lay of various embroidered patches with nature motifs including mountains and suns on a rustic wooden table" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBGNeVI8wWlrKANEFZ1c-qV7cK1hEfEicqikwfIVjbOtSLe1SI3o_Bya2DtxGzIlwdC0D72quuO5OGdu8bjetd_YPb1aOxAfDoNCZYa6BNewxENRYtphdutgBQU8cBUjFGUHu1TkIDUU-duDU0Uc4Wg_vlNrxxdUO0C1J_DeqIUIzzueFWf6hxZWIBWLwVTMvFsdyMry15vRdp5SKJTiToEDIb30_OlNaqyqn_R11LuXGEkzlvwhcH7noDwS04ZHvAp8objcHjm-gNe"/>
+</div>
+<div class="md:col-span-8 bg-surface-container-low rounded-xl overflow-hidden group relative">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="stack of folded premium sweatshirts in earth tones showing quality textures and clean finished edges in soft natural light" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAPQeZgfMWSmB5mqphEmOmpmWxXC3Bh0lYj4hJJBHd-qHHcynY8NKonahQiQBX7TNOUTRSj0T-FOZAucuTHVKbiqv0yerjLxi64f5M9ONgvOwxDn6Su36myFiRYaI7Lz_NlTJiYuDPK1eimab_OWEXEF94OvzV_jNUEsovxtgPQ8zICs0CTbI0sz9p9tKDcLsOX4lBtXqL2EUiJSMf_S8waOBgAs_IK7li39L5Z7FhEr7bcwP5qm150ZPJnWPGHIV03b6VZV83ORN-m"/>
+<div class="absolute top-8 right-8 bg-white/70 backdrop-blur-md p-6 rounded-xl max-w-xs">
+<p class="font-headline font-bold text-on-background text-lg leading-tight">Small batch production for NorCal's finest labels.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Our NorCal Roots (Asymmetric) -->
+<section class="py-32 px-8 md:px-20 bg-surface-container-low relative overflow-hidden">
+<div class="absolute -right-20 top-0 opacity-10 pointer-events-none">
+<span class="material-symbols-outlined text-[600px] text-primary">scan</span>
+</div>
+<div class="flex flex-col md:flex-row gap-20 items-center">
+<div class="flex-1 relative">
+<div class="w-full h-[600px] rounded-xl overflow-hidden rotate-2 bg-primary">
+<img class="w-full h-full object-cover opacity-90 -rotate-2 scale-110" data-alt="serene Northern California forest at dusk with tall pine trees and a soft orange glow filtering through the mist" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBnCqrW8QuJTwQzMuIHSJlJTyuR30upTQAskycStJd6cbNbireDZfMBOVXht7X4UYfVBcz6i9h8exbuK_n8AN3IY-8JSSmIybwkUDtl_vEC76dRvlAXUZDQrnJopvWXuDUk_7Tdk215sun5B6-2JZETh2unelErBnK3Kz_DsilRgq9Kvw6zDqzGgzyqODMD2UKvwjb4FjISQ8GB9UzD5rKsaYcNRXhlorcfisu5WrVX08meHqTtbBgE55qE8SEoukAhbd1bBvIiMAb2"/>
+</div>
+<div class="absolute -bottom-10 -right-10 w-64 h-64 bg-surface p-8 rounded-xl shadow-xl hidden md:block">
+<p class="text-primary font-headline font-extrabold text-5xl mb-2">919</p>
+<p class="font-label text-xs uppercase tracking-widest font-bold">Crafted in the heart of the Valley.</p>
+</div>
+</div>
+<div class="flex-1 space-y-8">
+<h2 class="text-5xl font-headline font-extrabold tracking-tighter text-on-background leading-tight">Rooted in the <br/> Golden State.</h2>
+<p class="text-xl text-on-surface-variant leading-relaxed font-medium">
+                    Born under the redwood canopy and fueled by the relentless innovation of the North, 919designs is more than a print shop. We are a boutique studio dedicated to the tactile heritage of apparel decoration.
+                </p>
+<p class="text-lg text-on-surface-variant font-medium">
+                    Every thread is tensioned by hand, every ink is cured to perfection, and every design is proofed under the warm glow of our NorCal atelier.
+                </p>
+<div class="pt-6">
+<button class="bg-primary text-on-primary px-10 py-5 rounded-full font-headline font-bold text-lg hover:shadow-lg transition-all">
+                        Our Process
+                    </button>
+</div>
+</div>
+</div>
+</section>
+<!-- CTA Section -->
+<section class="py-24 px-8 md:px-20 bg-background text-center">
+<div class="max-w-4xl mx-auto sky-fade p-16 rounded-[2rem] border border-outline-variant/10">
+<h2 class="text-4xl md:text-6xl font-headline font-extrabold tracking-tighter mb-6 leading-tight">Ready to elevate your thread?</h2>
+<p class="text-xl text-on-surface-variant mb-10 font-medium">Join our roster of premium labels and local icons.</p>
+<div class="flex flex-col md:flex-row justify-center gap-4">
+<input class="bg-surface border-none px-8 py-4 rounded-xl w-full md:w-80 focus:ring-2 focus:ring-primary font-body" placeholder="Your brand's email" type="email"/>
+<button class="sunset-gradient text-on-primary px-10 py-4 rounded-xl font-bold font-headline">Contact Studio</button>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="w-full mt-auto bg-[#f6f3f2] dark:bg-[#252526]">
+<div class="flex flex-col md:flex-row justify-between items-center px-12 py-16 gap-8 w-full">
+<div class="flex flex-col gap-4">
+<span class="text-xl font-extrabold font-headline text-[#a33f00]">919designs</span>
+<p class="font-body text-sm leading-relaxed text-[#735380] dark:text-[#e4e2e2] max-w-xs font-medium">© 2024 919designs. Crafted with precision in NorCal.</p>
+</div>
+<div class="flex gap-12">
+<div class="flex flex-col gap-3">
+<span class="font-headline font-bold text-on-background">Navigation</span>
+<a class="font-body text-sm text-[#735380] dark:text-[#e4e2e2] hover:text-[#a33f00] transition-all duration-300 font-medium" href="#">Process</a>
+<a class="font-body text-sm text-[#735380] dark:text-[#e4e2e2] hover:text-[#a33f00] transition-all duration-300 underline decoration-2 underline-offset-4 font-bold" href="#">Portfolio</a>
+<a class="font-body text-sm text-[#735380] dark:text-[#e4e2e2] hover:text-[#a33f00] transition-all duration-300 font-medium" href="#">Sustainability</a>
+<a class="font-body text-sm text-[#735380] dark:text-[#e4e2e2] hover:text-[#a33f00] transition-all duration-300 font-medium" href="#">Contact</a>
+</div>
+<div class="flex flex-col gap-3">
+<span class="font-headline font-bold text-on-background">Connect</span>
+<a class="font-body text-sm text-[#735380] dark:text-[#e4e2e2] hover:text-[#a33f00] font-medium" href="#">Instagram</a>
+<a class="font-body text-sm text-[#735380] dark:text-[#e4e2e2] hover:text-[#a33f00] font-medium" href="#">LinkedIn</a>
+</div>
+</div>
+</div>
+</footer>
+<!-- BottomNavBar (Mobile Only) -->
+<nav class="md:hidden fixed bottom-0 left-0 w-full flex justify-around items-center px-4 pb-6 pt-2 bg-[#fcf9f8] dark:bg-[#323233] rounded-t-xl z-50 shadow-[0_-10px_30px_rgba(50,50,51,0.06)]">
+<a class="flex flex-col items-center justify-center bg-gradient-to-br from-[#a33f00] to-[#ffae89] text-white rounded-xl px-4 py-1 active:scale-90 duration-150" href="#">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">auto_awesome</span>
+<span class="font-body text-[10px] uppercase tracking-widest font-bold">Gallery</span>
+</a>
+<a class="flex flex-col items-center justify-center text-[#735380] dark:text-[#e4e2e2] opacity-70 hover:opacity-100 transition-opacity" href="#">
+<span class="material-symbols-outlined">architecture</span>
+<span class="font-body text-[10px] uppercase tracking-widest font-bold">Custom</span>
+</a>
+<a class="flex flex-col items-center justify-center text-[#735380] dark:text-[#e4e2e2] opacity-70 hover:opacity-100 transition-opacity" href="#">
+<span class="material-symbols-outlined">shopping_bag</span>
+<span class="font-body text-[10px] uppercase tracking-widest font-bold">Orders</span>
+</a>
+<a class="flex flex-col items-center justify-center text-[#735380] dark:text-[#e4e2e2] opacity-70 hover:opacity-100 transition-opacity" href="#">
+<span class="material-symbols-outlined">person</span>
+<span class="font-body text-[10px] uppercase tracking-widest font-bold">Profile</span>
+</a>
+</nav>
+</body></html>

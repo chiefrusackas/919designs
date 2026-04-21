@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,wght@0,400;0,700;1,400;1,700&amp;family=Public+Sans:wght@300;400;600;800&amp;family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "on-error": "#690005",
+                        "on-tertiary": "#00363d",
+                        "tertiary-container": "#005762",
+                        "on-error-container": "#ffdad6",
+                        "surface-bright": "#263c48",
+                        "secondary": "#cdc6b4",
+                        "surface-container-low": "#061e29",
+                        "surface-tint": "#ffb3ac",
+                        "on-secondary-container": "#bbb5a3",
+                        "on-secondary": "#333024",
+                        "on-tertiary-container": "#89cbd7",
+                        "on-tertiary-fixed": "#001f24",
+                        "outline": "#a68a88",
+                        "on-primary-container": "#ffaaa2",
+                        "on-primary-fixed-variant": "#86201e",
+                        "outline-variant": "#57413f",
+                        "error": "#ffb4ab",
+                        "on-secondary-fixed-variant": "#4a4739",
+                        "inverse-on-surface": "#1d333f",
+                        "on-primary": "#66060b",
+                        "primary-fixed-dim": "#ffb3ac",
+                        "surface": "#001620",
+                        "primary-container": "#912825",
+                        "secondary-fixed": "#e9e2cf",
+                        "surface-variant": "#213743",
+                        "secondary-fixed-dim": "#cdc6b4",
+                        "tertiary-fixed-dim": "#8fd1de",
+                        "surface-container": "#0a222d",
+                        "inverse-primary": "#a73833",
+                        "tertiary": "#8fd1de",
+                        "on-surface-variant": "#dec0bc",
+                        "surface-container-lowest": "#001019",
+                        "on-primary-fixed": "#410003",
+                        "tertiary-fixed": "#abedfa",
+                        "error-container": "#93000a",
+                        "on-tertiary-fixed-variant": "#004f59",
+                        "surface-container-high": "#162d38",
+                        "primary": "#ffb3ac",
+                        "inverse-surface": "#cee6f5",
+                        "surface-container-highest": "#213743",
+                        "background": "#001620",
+                        "secondary-container": "#4a4739",
+                        "on-background": "#cee6f5",
+                        "on-secondary-fixed": "#1e1c10",
+                        "on-surface": "#cee6f5",
+                        "primary-fixed": "#ffdad6",
+                        "surface-dim": "#001620"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "0.75rem"
+                    },
+                    "fontFamily": {
+                        "headline": ["Newsreader"],
+                        "body": ["Public Sans"],
+                        "label": ["Public Sans"]
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        body {
+            background-color: #506673;
+            color: #EEE7D4;
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="font-body selection:bg-primary-container selection:text-on-primary-container">
+<!-- TopAppBar -->
+<header class="bg-slate-600/60 dark:bg-[#506673]/60 backdrop-blur-xl fixed top-0 w-full z-50 shadow-[0_64px_64px_-12px_rgba(0,16,25,0.06)]">
+<div class="flex items-center justify-between px-6 py-4 w-full max-w-none">
+<div class="flex items-center gap-4">
+<button class="hover:bg-white/5 transition-colors active:scale-95 duration-200 p-2 rounded-lg">
+<span class="material-symbols-outlined text-[#EEE7D4]" data-icon="menu">menu</span>
+</button>
+<h1 class="font-headline italic tracking-tight text-[#EEE7D4] text-3xl font-bold tracking-tighter uppercase">919DESIGNS</h1>
+</div>
+<div class="flex items-center gap-6">
+<nav class="hidden md:flex gap-8">
+<a class="font-label text-[10px] uppercase tracking-[0.1em] text-[#EEE7D4]/70 hover:text-[#EEE7D4] transition-all" href="#">Catalog</a>
+<a class="font-label text-[10px] uppercase tracking-[0.1em] text-[#EEE7D4]/70 hover:text-[#EEE7D4] transition-all" href="#">Custom</a>
+<a class="font-label text-[10px] uppercase tracking-[0.1em] text-[#EEE7D4]/70 hover:text-[#EEE7D4] transition-all" href="#">Gallery</a>
+<a class="font-label text-[10px] uppercase tracking-[0.1em] text-[#912825] font-bold" href="#">FAQ</a>
+</nav>
+<button class="hover:bg-white/5 transition-colors active:scale-95 duration-200 p-2 rounded-lg">
+<span class="material-symbols-outlined text-[#EEE7D4]" data-icon="shopping_bag">shopping_bag</span>
+</button>
+</div>
+</div>
+</header>
+<main class="pt-32 pb-24 px-6 md:px-12 max-w-7xl mx-auto min-h-screen">
+<!-- Hero Section -->
+<section class="mb-24 grid md:grid-cols-2 gap-12 items-end">
+<div>
+<span class="font-label text-[11px] uppercase tracking-[0.2em] text-[#912825] font-bold mb-4 block">Information Protocol</span>
+<h2 class="font-headline text-6xl md:text-8xl leading-none italic font-bold text-[#EEE7D4] -ml-1">Technical <br/>Specifications.</h2>
+</div>
+<div class="pb-2">
+<p class="font-body text-lg leading-relaxed text-[#EEE7D4]/80 max-w-md border-l border-[#912825] pl-6 italic">
+                    Engineered permanence is not a slogan; it is a manufacturing standard. Explore the technical nuances of our textile engineering and assembly methodologies.
+                </p>
+</div>
+</section>
+<!-- FAQ Content: Bento Grid -->
+<div class="grid grid-cols-1 md:grid-cols-12 gap-4">
+<!-- Category: Materiality -->
+<div class="md:col-span-8 bg-[#213743] rounded-lg p-8 flex flex-col justify-between shadow-lg">
+<div class="mb-12">
+<div class="flex items-center gap-3 mb-6">
+<span class="material-symbols-outlined text-[#912825]" data-icon="apparel">apparel</span>
+<h3 class="font-label text-xs uppercase tracking-widest font-bold">01. Materiality &amp; Integrity</h3>
+</div>
+<div class="space-y-8">
+<details class="group cursor-pointer">
+<summary class="flex justify-between items-center list-none font-headline text-2xl font-bold group-hover:text-[#912825] transition-colors">
+                                What is the GSM specification of the Monolith Hoodie?
+                                <span class="material-symbols-outlined transition-transform group-open:rotate-180" data-icon="expand_more">expand_more</span>
+</summary>
+<div class="mt-4 font-body text-[#EEE7D4]/70 leading-relaxed max-w-2xl">
+                                Our Monolith Hoodie utilizes a 600 GSM ultra-heavyweight brush-back fleece. The yarn is 100% organic long-staple cotton, custom-dyed and pre-shrunk via an industrial heat-setting process to ensure zero dimensional shift post-purchase.
+                            </div>
+</details>
+<details class="group cursor-pointer">
+<summary class="flex justify-between items-center list-none font-headline text-2xl font-bold group-hover:text-[#912825] transition-colors">
+                                Describe the "Dry Hand" finish.
+                                <span class="material-symbols-outlined transition-transform group-open:rotate-180" data-icon="expand_more">expand_more</span>
+</summary>
+<div class="mt-4 font-body text-[#EEE7D4]/70 leading-relaxed max-w-2xl">
+                                Unlike standard silicon-treated garments that feel artificially soft, our "Dry Hand" finish relies on mechanical abrasion during the knitting process. This creates a textured, architectural drape that ages with a unique patina relative to the wearer's environment.
+                            </div>
+</details>
+</div>
+</div>
+<div class="flex gap-2">
+<div class="h-1 w-12 bg-[#912825]"></div>
+<div class="h-1 w-24 bg-[#EEE7D4]/10"></div>
+</div>
+</div>
+<!-- Technical Aside: Stats -->
+<div class="md:col-span-4 bg-[#001019] rounded-lg p-8 flex flex-col justify-between border-l-4 border-[#912825]">
+<div>
+<h4 class="font-label text-[10px] uppercase tracking-widest text-[#912825] mb-8 font-extrabold">Standard Benchmarks</h4>
+<ul class="space-y-6">
+<li class="flex flex-col">
+<span class="text-4xl font-headline italic font-bold">380-600</span>
+<span class="font-label text-[9px] uppercase tracking-tighter text-[#EEE7D4]/40">Grams Per Square Meter</span>
+</li>
+<li class="flex flex-col">
+<span class="text-4xl font-headline italic font-bold">Double-Fold</span>
+<span class="font-label text-[9px] uppercase tracking-tighter text-[#EEE7D4]/40">Flatlock Seam Reinforcement</span>
+</li>
+<li class="flex flex-col">
+<span class="text-4xl font-headline italic font-bold">12-Gauge</span>
+<span class="font-label text-[9px] uppercase tracking-tighter text-[#EEE7D4]/40">Precision Knit Complexity</span>
+</li>
+</ul>
+</div>
+<div class="mt-8">
+<img class="w-full h-32 object-cover rounded grayscale opacity-50 contrast-125" data-alt="Close up macro shot of high density industrial textile knit showing intricate interlocking cotton fibers in slate gray" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBPeLBcp2qyQCUtqz1A6i_LiYzBQuKIQA73q9topk3179T5OwbSYhve1PEDqqKLZU7Gk5HUV6CCq_k7FxIAkBosV9LwrT0hnkJ6du6pdIh3C8lNSMP3x7UIUp6XzzVBSuZXNs1FytfDEqLNQeKJ16tDUUGocaoR3kjLeSjAYd3V5W6yuB8UlxzPApYDy0U83QqYcovwB3DjrrTNtsH-oPFfFK61b44w54Q3uH5Z55y5T0mqtZdnau8BOu6PCfXoNC9V105iF5uYZTZX"/>
+</div>
+</div>
+<!-- Category: Logistics -->
+<div class="md:col-span-6 bg-[#213743]/50 backdrop-blur rounded-lg p-8 shadow-md">
+<div class="flex items-center gap-3 mb-8">
+<span class="material-symbols-outlined text-[#912825]" data-icon="local_shipping">local_shipping</span>
+<h3 class="font-label text-xs uppercase tracking-widest font-bold">02. Distribution Logic</h3>
+</div>
+<div class="space-y-8">
+<details class="group cursor-pointer">
+<summary class="flex justify-between items-center list-none font-headline text-xl font-bold group-hover:text-[#912825] transition-colors">
+                            International fulfillment timelines?
+                            <span class="material-symbols-outlined transition-transform group-open:rotate-180" data-icon="expand_more">expand_more</span>
+</summary>
+<p class="mt-4 font-body text-sm text-[#EEE7D4]/70 leading-relaxed">
+                            All units are shipped via expedited industrial logistics. North American transit: 3-5 cycles. International: 7-12 cycles depending on regional clearing protocols.
+                        </p>
+</details>
+<details class="group cursor-pointer">
+<summary class="flex justify-between items-center list-none font-headline text-xl font-bold group-hover:text-[#912825] transition-colors">
+                            Custom order synchronization?
+                            <span class="material-symbols-outlined transition-transform group-open:rotate-180" data-icon="expand_more">expand_more</span>
+</summary>
+<p class="mt-4 font-body text-sm text-[#EEE7D4]/70 leading-relaxed">
+                            Custom commissions enter a separate fabrication queue. Lead times are calculated based on machinery availability and complexity of the embroidery matrix.
+                        </p>
+</details>
+</div>
+</div>
+<!-- Category: Sustainability -->
+<div class="md:col-span-6 bg-[#213743]/50 backdrop-blur rounded-lg p-8 shadow-md">
+<div class="flex items-center gap-3 mb-8">
+<span class="material-symbols-outlined text-[#912825]" data-icon="eco">eco</span>
+<h3 class="font-label text-xs uppercase tracking-widest font-bold">03. Ecological Ethics</h3>
+</div>
+<div class="space-y-8">
+<details class="group cursor-pointer">
+<summary class="flex justify-between items-center list-none font-headline text-xl font-bold group-hover:text-[#912825] transition-colors">
+                            What is the Lifecycle Guarantee?
+                            <span class="material-symbols-outlined transition-transform group-open:rotate-180" data-icon="expand_more">expand_more</span>
+</summary>
+<p class="mt-4 font-body text-sm text-[#EEE7D4]/70 leading-relaxed">
+                            We design for a 10-year minimum operational lifecycle. If a seam fails under normal utilitarian conditions, we provide repair kits or internal restructuring services.
+                        </p>
+</details>
+<details class="group cursor-pointer">
+<summary class="flex justify-between items-center list-none font-headline text-xl font-bold group-hover:text-[#912825] transition-colors">
+                            Water conservation metrics?
+                            <span class="material-symbols-outlined transition-transform group-open:rotate-180" data-icon="expand_more">expand_more</span>
+</summary>
+<p class="mt-4 font-body text-sm text-[#EEE7D4]/70 leading-relaxed">
+                            Our finishing plant utilizes a closed-loop filtration system, recycling 98% of all water used in the dyeing process, meeting ISO 14001 environmental standards.
+                        </p>
+</details>
+</div>
+</div>
+</div>
+<!-- Contact CTA -->
+<section class="mt-24 bg-[#912825] p-12 md:p-20 rounded-lg flex flex-col md:flex-row justify-between items-center gap-12 text-[#EEE7D4]">
+<div class="text-center md:text-left">
+<h3 class="font-headline text-4xl md:text-6xl font-bold leading-tight mb-4 italic">Require further <br/>technical clarity?</h3>
+<p class="font-body opacity-80 max-w-md">Our engineering desk is available for deep-dive specification inquiries and custom fabrication consultation.</p>
+</div>
+<button class="bg-[#EEE7D4] text-[#912825] px-10 py-5 font-label text-xs uppercase tracking-widest font-bold hover:bg-white transition-colors active:translate-y-0.5">
+                Initiate Inquiry
+            </button>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-[#001019] w-full py-12 px-8 mt-auto">
+<div class="flex flex-col md:flex-row justify-between items-center gap-6 w-full">
+<div class="flex flex-col items-center md:items-start">
+<span class="font-headline text-lg text-[#EEE7D4]">919DESIGNS</span>
+<p class="font-label text-[11px] uppercase tracking-widest text-[#EEE7D4]/40 mt-2">© 2024 919DESIGNS. ENGINEERED PERMANENCE.</p>
+</div>
+<nav class="flex gap-8">
+<a class="font-label text-[11px] uppercase tracking-widest text-[#EEE7D4]/40 hover:text-[#912825] transition-colors" href="#">Terms of Service</a>
+<a class="font-label text-[11px] uppercase tracking-widest text-[#EEE7D4]/40 hover:text-[#912825] transition-colors" href="#">Privacy Policy</a>
+<a class="font-label text-[11px] uppercase tracking-widest text-[#EEE7D4]/40 hover:text-[#912825] transition-colors" href="#">Shipping</a>
+</nav>
+</div>
+</footer>
+<!-- BottomNavBar (Mobile Only) -->
+<nav class="md:hidden fixed bottom-0 left-0 w-full h-16 bg-slate-700/80 dark:bg-[#213743]/80 backdrop-blur-lg flex justify-around items-center px-4 pb-safe z-50 rounded-t-lg border-t border-white/10 shadow-2xl">
+<button class="flex flex-col items-center justify-center text-[#EEE7D4]/50 hover:text-[#EEE7D4] transition-all active:translate-y-0.5">
+<span class="material-symbols-outlined" data-icon="apparel">apparel</span>
+<span class="font-label text-[10px] uppercase tracking-[0.05em] font-bold">Catalog</span>
+</button>
+<button class="flex flex-col items-center justify-center text-[#EEE7D4]/50 hover:text-[#EEE7D4] transition-all active:translate-y-0.5">
+<span class="material-symbols-outlined" data-icon="edit_note">edit_note</span>
+<span class="font-label text-[10px] uppercase tracking-[0.05em] font-bold">Custom</span>
+</button>
+<button class="flex flex-col items-center justify-center text-[#EEE7D4]/50 hover:text-[#EEE7D4] transition-all active:translate-y-0.5">
+<span class="material-symbols-outlined" data-icon="photo_library">photo_library</span>
+<span class="font-label text-[10px] uppercase tracking-[0.05em] font-bold">Gallery</span>
+</button>
+<button class="flex flex-col items-center justify-center text-[#EEE7D4] bg-[#912825] rounded-md px-4 py-1 active:translate-y-0.5">
+<span class="material-symbols-outlined" data-icon="quiz">quiz</span>
+<span class="font-label text-[10px] uppercase tracking-[0.05em] font-bold">FAQ</span>
+</button>
+</nav>
+</body></html>

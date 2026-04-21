@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&amp;family=Public+Sans:wght@100..900&amp;family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "on-error": "#690005",
+                    "on-tertiary": "#00363d",
+                    "tertiary-container": "#005762",
+                    "on-error-container": "#ffdad6",
+                    "surface-bright": "#263c48",
+                    "secondary": "#cdc6b4",
+                    "surface-container-low": "#061e29",
+                    "surface-tint": "#ffb3ac",
+                    "on-secondary-container": "#bbb5a3",
+                    "on-secondary": "#333024",
+                    "on-tertiary-container": "#89cbd7",
+                    "on-tertiary-fixed": "#001f24",
+                    "outline": "#a68a88",
+                    "on-primary-container": "#ffaaa2",
+                    "on-primary-fixed-variant": "#86201e",
+                    "outline-variant": "#57413f",
+                    "error": "#ffb4ab",
+                    "on-secondary-fixed-variant": "#4a4739",
+                    "inverse-on-surface": "#1d333f",
+                    "on-primary": "#66060b",
+                    "primary-fixed-dim": "#ffb3ac",
+                    "surface": "#001620",
+                    "primary-container": "#912825",
+                    "secondary-fixed": "#e9e2cf",
+                    "surface-variant": "#213743",
+                    "secondary-fixed-dim": "#cdc6b4",
+                    "tertiary-fixed-dim": "#8fd1de",
+                    "surface-container": "#0a222d",
+                    "inverse-primary": "#a73833",
+                    "tertiary": "#8fd1de",
+                    "on-surface-variant": "#dec0bc",
+                    "surface-container-lowest": "#001019",
+                    "on-primary-fixed": "#410003",
+                    "tertiary-fixed": "#abedfa",
+                    "error-container": "#93000a",
+                    "on-tertiary-fixed-variant": "#004f59",
+                    "surface-container-high": "#162d38",
+                    "primary": "#ffb3ac",
+                    "inverse-surface": "#cee6f5",
+                    "surface-container-highest": "#213743",
+                    "background": "#001620",
+                    "secondary-container": "#4a4739",
+                    "on-background": "#cee6f5",
+                    "on-secondary-fixed": "#1e1c10",
+                    "on-surface": "#cee6f5",
+                    "primary-fixed": "#ffdad6",
+                    "surface-dim": "#001620"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.125rem",
+                    "lg": "0.25rem",
+                    "xl": "0.5rem",
+                    "full": "0.75rem"
+            },
+            "fontFamily": {
+                    "headline": ["Newsreader"],
+                    "body": ["Public Sans"],
+                    "label": ["Public Sans"]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .monolith-bg { background-color: #506673; }
+        .cream-text { color: #EEE7D4; }
+        .oxblood-bg { background-color: #912825; }
+        .oxblood-text { color: #912825; }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="monolith-bg cream-text font-body selection:bg-primary-container selection:text-on-primary">
+<!-- TopAppBar -->
+<header class="fixed top-0 w-full z-50 bg-slate-600/60 dark:bg-[#506673]/60 backdrop-blur-xl shadow-[0_64px_64px_-12px_rgba(0,16,25,0.06)]">
+<div class="flex items-center justify-between px-6 py-4 w-full max-w-none">
+<div class="flex items-center gap-4">
+<span class="material-symbols-outlined text-[#EEE7D4] cursor-pointer active:scale-95 duration-200">menu</span>
+<h1 class="text-3xl font-bold tracking-tighter text-[#EEE7D4] uppercase font-headline">919DESIGNS</h1>
+</div>
+<div class="flex items-center gap-6">
+<nav class="hidden md:flex gap-8 font-label text-[11px] uppercase tracking-widest">
+<a class="text-[#912825] font-bold" href="#">Catalog</a>
+<a class="text-[#EEE7D4]/70 hover:bg-white/5 transition-colors px-2 py-1" href="#">Custom</a>
+<a class="text-[#EEE7D4]/70 hover:bg-white/5 transition-colors px-2 py-1" href="#">Gallery</a>
+<a class="text-[#EEE7D4]/70 hover:bg-white/5 transition-colors px-2 py-1" href="#">FAQ</a>
+</nav>
+<span class="material-symbols-outlined text-[#EEE7D4] cursor-pointer active:scale-95 duration-200">shopping_bag</span>
+</div>
+</div>
+</header>
+<main class="pt-28 pb-32 px-6 max-w-7xl mx-auto">
+<!-- Hero Section / Asymmetric Headline -->
+<section class="mb-24 flex flex-col md:flex-row items-baseline justify-between gap-8">
+<div class="max-w-2xl">
+<span class="font-label text-[10px] uppercase tracking-[0.2em] oxblood-text font-bold mb-4 block">Archive 04: The System</span>
+<h2 class="text-6xl md:text-8xl font-headline italic leading-[0.85] tracking-tighter mb-8">
+                    Engineered <br/> Permanence.
+                </h2>
+<p class="text-lg opacity-80 max-w-md leading-relaxed">
+                    A technical assembly of high-performance artifacts. Designed for extreme utility and architectural silhouettes.
+                </p>
+</div>
+<div class="hidden md:block w-32 h-px bg-white/10 self-end mb-4"></div>
+</section>
+<!-- Catalog Filter Bar -->
+<div class="sticky top-24 z-40 mb-16 py-4 backdrop-blur-md bg-[#506673]/40 flex gap-4 overflow-x-auto no-scrollbar">
+<button class="bg-[#912825] text-[#EEE7D4] px-6 py-2 text-[11px] uppercase font-bold tracking-widest rounded-md shrink-0">All Modules</button>
+<button class="bg-surface-container-highest/60 text-[#EEE7D4]/60 px-6 py-2 text-[11px] uppercase font-bold tracking-widest rounded-md shrink-0 hover:bg-surface-container-highest transition-colors">Headwear</button>
+<button class="bg-surface-container-highest/60 text-[#EEE7D4]/60 px-6 py-2 text-[11px] uppercase font-bold tracking-widest rounded-md shrink-0 hover:bg-surface-container-highest transition-colors">Base Layers</button>
+<button class="bg-surface-container-highest/60 text-[#EEE7D4]/60 px-6 py-2 text-[11px] uppercase font-bold tracking-widest rounded-md shrink-0 hover:bg-surface-container-highest transition-colors">Outer Shells</button>
+</div>
+<!-- Catalog Grid: Bento/Asymmetric -->
+<div class="grid grid-cols-1 md:grid-cols-12 gap-8">
+<!-- Category: Outer Shells (Featured) -->
+<div class="md:col-span-8 group">
+<div class="relative aspect-[16/10] overflow-hidden bg-surface-container-low rounded-lg mb-4">
+<img class="w-full h-full object-cover grayscale opacity-80 group-hover:scale-105 group-hover:opacity-100 transition-all duration-700" data-alt="Technical obsidian black waterproof shell jacket with minimalist architectural tailoring on a dark industrial concrete background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCds7zxo3GnCe9QXT_N-RG1WTaxgU1itZDbTAJSxJTecJpe67MS3bJRPqpZWiXKelt6zQbzY21r77fR_qx6yHGVD7_Ag7KXqfGCVh-DFuDBRUkZoEbrkz2dtMNQF4XrQeYbb4MP77sqXlJ0O0omQMpx1_HHyJoOP8x1C3BQTdxmpT1UlZzrI5Lqvfs-KWmwOyiOfi29CCsVPyGAAfRBF14IxVXyjiYCJy9E0lPskzSkk_9B6e6BbEXgMTUKMl9uAawg71q-OdFRP-wR"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+<div class="absolute bottom-8 left-8">
+<span class="font-label text-[10px] uppercase tracking-widest text-[#EEE7D4]/60 mb-2 block">Protective Equipment</span>
+<h3 class="text-3xl font-headline italic">Monolith Hard-Shell V2</h3>
+</div>
+</div>
+<div class="flex justify-between items-center px-2">
+<div class="flex gap-4">
+<span class="font-label text-[11px] opacity-40">SERIAL: 919-SH-01</span>
+<span class="font-label text-[11px] oxblood-text font-bold">READY TO SHIP</span>
+</div>
+<span class="font-headline italic text-xl">$485.00</span>
+</div>
+</div>
+<!-- Category: Headwear -->
+<div class="md:col-span-4 flex flex-col gap-8">
+<div class="group">
+<div class="relative aspect-square overflow-hidden bg-surface-container-low rounded-lg mb-4">
+<img class="w-full h-full object-cover grayscale opacity-70 group-hover:scale-105 group-hover:opacity-100 transition-all duration-700" data-alt="Close-up of a high-density charcoal gray knit beanie with a subtle industrial woven tag on a dark slate background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBEV_Ep9ziJNbakTFt_XN6nv26kgAfzK_ee7Xixxbj52W2coG2Bnd-N7P4jAK6ouNsjH4u4KHERqCKrLNz2xCEYM3LJurdO240tBulcDC6OSbpmBrFGCJ9EYaCtwPJg_c1gUqnrRp_Ir_461LjsuGj1MbErs-dD4WPEPeXj0kKOaVyAVRJPFKKHeBETrvQORc_WMa9kLu9siNCtG3pWmcZzGwsI10AaERLWkSNjhPm4BuTcS8-m6sq_DO-VXlWcQffwZWJ5XJJTk-UX"/>
+<div class="absolute bottom-6 left-6">
+<h3 class="text-xl font-headline italic">Slate Thermal Beanie</h3>
+</div>
+</div>
+<div class="flex justify-between items-center px-2">
+<span class="font-label text-[11px] opacity-40">HEADWEAR</span>
+<span class="font-headline italic">$65.00</span>
+</div>
+</div>
+<div class="group">
+<div class="relative aspect-square overflow-hidden bg-surface-container-low rounded-lg mb-4">
+<img class="w-full h-full object-cover grayscale opacity-70 group-hover:scale-105 group-hover:opacity-100 transition-all duration-700" data-alt="Matte black structural tactical cap with reinforced brim and laser-cut ventilation details in dramatic low light" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCl5y_q5-4sATFh6TW5OgztovtLMKEECCxgFRCcG08b9AAOA5gVtFoh71B_wRkzmHa6Dkha_Snufrvg11bZMTGY_U7ShP8tmwsTef4PrrusBhJiU2zPoV2A7rRipDgyMcx6FSTG-deUiQzm4EA3qA1Px5fORCYH9c27HLxv03H3TYO5iNuI3otQjN3gdMCK8gBn2aIGZ7KJuJvEv4jOkXYaLu-OUlPwzTPx8ogRn4hlyVrwzf4UnwujlfMJ_8GBWJfiwutsqkIvp37H"/>
+<div class="absolute bottom-6 left-6">
+<h3 class="text-xl font-headline italic">Apex Utility Cap</h3>
+</div>
+</div>
+<div class="flex justify-between items-center px-2">
+<span class="font-label text-[11px] opacity-40">HEADWEAR</span>
+<span class="font-headline italic">$80.00</span>
+</div>
+</div>
+</div>
+<!-- Category: Base Layers -->
+<div class="md:col-span-4 group">
+<div class="relative aspect-[3/4] overflow-hidden bg-surface-container-low rounded-lg mb-4">
+<img class="w-full h-full object-cover grayscale opacity-70 group-hover:scale-105 group-hover:opacity-100 transition-all duration-700" data-alt="Heavyweight cream-colored technical cotton t-shirt with exposed overlock stitching and industrial fit" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBcTA4OidTqia9ZsWiVLGCxaadmdqZQsCaic8Nn-5_uKMiPPlWmx2RU5h0sFeFlq4mAg7X0ziwa5CK24sqmXCeVd_WLKYnJUOz08wWt5iU-FFOLFESn3mQ5g5PmFIIBCnfrnrSR3Ns1Xv3jfsWruZUk1UkmtTbiM4Ig-iM_AowM6X1Mjo-Sn5jpMpjVmd34VvoRly93HI0P2Vccf1C67kddAw0_ZjhgkNOJzTqOzCYGH5FUufYhT5bLIrTLuJFACOko133ymC-GgtBG"/>
+<div class="absolute bottom-6 left-6">
+<h3 class="text-2xl font-headline italic">Industrial Base T-01</h3>
+</div>
+</div>
+<div class="flex justify-between items-center px-2">
+<span class="font-label text-[11px] opacity-40">BASE LAYER</span>
+<span class="font-headline italic">$110.00</span>
+</div>
+</div>
+<div class="md:col-span-8 group">
+<div class="bg-surface-container-highest/40 p-12 rounded-lg flex flex-col md:flex-row items-center gap-12 transition-colors hover:bg-surface-container-highest/60">
+<div class="w-full md:w-1/2 overflow-hidden rounded shadow-2xl">
+<img class="w-full h-64 object-cover grayscale hover:grayscale-0 transition-all duration-1000" data-alt="Minimalist long-sleeve technical top in deep oxblood color featuring reinforced elbow panels and thumbholes" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCh84rPzggYXN-be7R4C4pOD48EEP5A4akwF6uT3SomCwhNpnycswTUxxocWjmVXE1zicKjSJ2aF_CFpBqFL-WbuQRab9O5hSgOIuqngwdC3uFjAFH-5PXXebjlDSxmzRNmo-s1TvFXDAtuvma1KeYEo7xQpFKaOcywMiMkr8SukUE6YeaNG0eHSHJWbJ2Mu2A4WIUVCDTZiCsF19tzd3QFlH56J5XlN5sXJCYNNjg21sBcVFHo9LqvdnDANf-dtR9YOCJe4gS2YBqd"/>
+</div>
+<div class="w-full md:w-1/2">
+<span class="font-label text-[10px] uppercase tracking-widest oxblood-text font-bold mb-4 block">Limited Deployment</span>
+<h3 class="text-4xl font-headline italic mb-6 leading-tight">Oxblood Thermal Compression</h3>
+<p class="text-sm opacity-60 leading-relaxed mb-8">Integrated moisture management and heat retention systems optimized for sub-zero urban operations. Reinforced stress points.</p>
+<button class="border border-white/10 px-8 py-3 text-[11px] uppercase tracking-widest font-bold hover:bg-[#912825] hover:border-[#912825] transition-all active:scale-95">Inquire Access</button>
+</div>
+</div>
+</div>
+</div>
+</main>
+<!-- Footer -->
+<footer class="bg-[#001019] w-full py-12 px-8 mt-auto">
+<div class="flex flex-col md:flex-row justify-between items-center gap-6 w-full">
+<div class="flex flex-col items-center md:items-start gap-2">
+<span class="font-headline text-lg text-[#EEE7D4]">919DESIGNS</span>
+<p class="font-label text-[11px] uppercase tracking-widest text-[#EEE7D4]/40">© 2024 919DESIGNS. ENGINEERED PERMANENCE.</p>
+</div>
+<div class="flex gap-8">
+<a class="font-label text-[11px] uppercase tracking-widest text-[#EEE7D4]/40 hover:text-[#912825] transition-colors" href="#">Terms of Service</a>
+<a class="font-label text-[11px] uppercase tracking-widest text-[#EEE7D4]/40 hover:text-[#912825] transition-colors" href="#">Privacy Policy</a>
+<a class="font-label text-[11px] uppercase tracking-widest text-[#EEE7D4]/40 hover:text-[#912825] transition-colors" href="#">Shipping</a>
+</div>
+</div>
+</footer>
+<!-- BottomNavBar -->
+<nav class="md:hidden fixed bottom-0 left-0 w-full h-16 bg-slate-700/80 dark:bg-[#213743]/80 backdrop-blur-lg flex justify-around items-center px-4 pb-safe z-50 rounded-t-lg border-t border-white/10 shadow-2xl">
+<a class="flex flex-col items-center justify-center text-[#EEE7D4] bg-[#912825] rounded-md px-4 py-1 active:translate-y-0.5" href="#">
+<span class="material-symbols-outlined" data-icon="apparel">apparel</span>
+<span class="font-label text-[10px] uppercase tracking-[0.05em] font-bold">Catalog</span>
+</a>
+<a class="flex flex-col items-center justify-center text-[#EEE7D4]/50 hover:text-[#EEE7D4] transition-all active:translate-y-0.5" href="#">
+<span class="material-symbols-outlined" data-icon="edit_note">edit_note</span>
+<span class="font-label text-[10px] uppercase tracking-[0.05em] font-bold">Custom</span>
+</a>
+<a class="flex flex-col items-center justify-center text-[#EEE7D4]/50 hover:text-[#EEE7D4] transition-all active:translate-y-0.5" href="#">
+<span class="material-symbols-outlined" data-icon="photo_library">photo_library</span>
+<span class="font-label text-[10px] uppercase tracking-[0.05em] font-bold">Gallery</span>
+</a>
+<a class="flex flex-col items-center justify-center text-[#EEE7D4]/50 hover:text-[#EEE7D4] transition-all active:translate-y-0.5" href="#">
+<span class="material-symbols-outlined" data-icon="quiz">quiz</span>
+<span class="font-label text-[10px] uppercase tracking-[0.05em] font-bold">FAQ</span>
+</a>
+</nav>
+</body></html>

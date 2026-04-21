@@ -1,0 +1,68 @@
+backend:
+  name: github
+  repo: chiefrusackas/919designs
+  branch: main
+  base_url: https://addsubtract-cms-auth.chiefrusackas.workers.dev
+  auth_endpoint: auth
+
+# Optional: Add local backend for development
+local_backend: true
+
+media_folder: "public/images/uploads"
+public_folder: "/images/uploads"
+
+collections:
+  - name: configurator
+    label: "Configurator Options"
+    files:
+      - label: "Configurator Options"
+        name: "configurator_settings"
+        file: "src/content/configurator.json"
+        extension: json
+        format: json
+        fields:
+          - label: "Available Garments (Types of clothing)"
+            name: "garments"
+            widget: "list"
+            field: { label: "Garment Name", name: "name", widget: "string" }
+          - label: "Decorations"
+            name: "decorations"
+            widget: "list"
+            field: { label: "Decoration Type", name: "name", widget: "string" }
+          - label: "Placements"
+            name: "placements"
+            widget: "list"
+            field: { label: "Placement", name: "name", widget: "string" }
+          - label: "Colors"
+            name: "colors"
+            widget: "list"
+            fields:
+              - { label: "Color Name", name: "name", widget: "string" }
+              - { label: "Color Hex/CSS Value", name: "value", widget: "string" }
+
+  - name: products
+    label: "Products"
+    folder: "src/content/products"
+    create: true
+    extension: json
+    format: json
+    slug: "{{slug}}"
+    fields:
+      - { label: "Name", name: "name", widget: "string" }
+      - { label: "Category", name: "category", widget: "select", options: ["Hats", "T-Shirts", "Hoodies", "Jackets", "More"] }
+      - { label: "Price", name: "price", widget: "string", default: "$0.00" }
+      - { label: "Status", name: "status", widget: "string", default: "In Stock" }
+      - { label: "Image", name: "image", widget: "image", required: false }
+
+  - name: gallery
+    label: "Gallery Photos"
+    folder: "src/content/gallery"
+    create: true
+    extension: json
+    format: json
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    fields:
+      - { label: "Image", name: "image", widget: "image" }
+      - { label: "Caption", name: "caption", widget: "string", required: false }
+      - { label: "Pinned", name: "pinned", widget: "boolean", default: false }
+      - { label: "Date", name: "date", widget: "datetime", date_format: "YYYY-MM-DD", format: "YYYY-MM-DD" }

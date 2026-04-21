@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "primary-container": "#912825",
+                        "surface-variant": "#353535",
+                        "surface-dim": "#131313",
+                        "on-tertiary-fixed": "#1e1c10",
+                        "on-secondary-fixed": "#061e29",
+                        "on-primary-fixed": "#410003",
+                        "background": "#131313",
+                        "secondary": "#b3cad9",
+                        "primary-fixed-dim": "#ffb3ac",
+                        "on-tertiary-fixed-variant": "#4a4739",
+                        "primary": "#ffb3ac",
+                        "on-primary-fixed-variant": "#86201e",
+                        "on-error-container": "#ffdad6",
+                        "tertiary-container": "#524e40",
+                        "surface-container-high": "#2a2a2a",
+                        "surface-tint": "#ffb3ac",
+                        "surface-container-low": "#1b1c1c",
+                        "tertiary-fixed": "#e9e2cf",
+                        "inverse-on-surface": "#303030",
+                        "on-surface-variant": "#dec0bc",
+                        "surface-container": "#1f2020",
+                        "inverse-primary": "#a73833",
+                        "on-secondary-container": "#a5bcca",
+                        "on-background": "#e4e2e1",
+                        "on-secondary": "#1d333f",
+                        "on-error": "#690005",
+                        "on-surface": "#e4e2e1",
+                        "tertiary-fixed-dim": "#cdc6b4",
+                        "on-tertiary": "#333024",
+                        "inverse-surface": "#e4e2e1",
+                        "surface": "#131313",
+                        "surface-bright": "#393939",
+                        "secondary-container": "#364c58",
+                        "on-tertiary-container": "#c6bfad",
+                        "surface-container-lowest": "#0e0e0e",
+                        "error-container": "#93000a",
+                        "secondary-fixed-dim": "#b3cad9",
+                        "surface-container-highest": "#353535",
+                        "on-primary-container": "#ffaaa2",
+                        "outline": "#a68a88",
+                        "error": "#ffb4ab",
+                        "primary-fixed": "#ffdad6",
+                        "tertiary": "#cdc6b4",
+                        "on-primary": "#66060b",
+                        "outline-variant": "#57413f",
+                        "on-secondary-fixed-variant": "#344a56",
+                        "secondary-fixed": "#cee6f5"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0px",
+                        "lg": "0px",
+                        "xl": "0px",
+                        "full": "9999px"
+                    },
+                    "fontFamily": {
+                        "headline": ["Space Grotesk"],
+                        "body": ["Space Grotesk"],
+                        "label": ["Space Grotesk"]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        body { font-family: 'Space Grotesk', sans-serif; }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .industrial-bg {
+            background-color: #506673;
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-surface text-on-surface selection:bg-primary-container selection:text-on-primary-container">
+<!-- TopAppBar -->
+<header class="fixed top-0 w-full z-50 flex items-center justify-between px-6 h-16 bg-[#131313]/80 backdrop-blur-xl">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-[#912825]" data-icon="precision_manufacturing">precision_manufacturing</span>
+<h1 class="text-2xl font-black tracking-[-0.05em] text-[#EEE7D4] uppercase">919DESIGNS</h1>
+</div>
+<div class="flex items-center gap-6">
+<nav class="hidden md:flex gap-8">
+<a class="text-[#EEE7D4]/60 hover:text-[#912825] font-bold text-xs uppercase tracking-widest transition-colors" href="#">Catalog</a>
+<a class="text-[#EEE7D4]/60 hover:text-[#912825] font-bold text-xs uppercase tracking-widest transition-colors" href="#">Custom</a>
+<a class="text-[#EEE7D4]/60 hover:text-[#912825] font-bold text-xs uppercase tracking-widest transition-colors" href="#">Gallery</a>
+<a class="text-[#912825] font-bold text-xs uppercase tracking-widest transition-colors border-b-2 border-[#912825]" href="#">FAQ</a>
+</nav>
+<span class="material-symbols-outlined text-[#EEE7D4] cursor-pointer hover:bg-[#912825] transition-colors p-2" data-icon="shopping_bag">shopping_bag</span>
+</div>
+</header>
+<main class="pt-16 pb-20 industrial-bg min-h-screen">
+<!-- Hero Section -->
+<section class="px-6 py-20 bg-surface-container-lowest">
+<div class="max-w-7xl mx-auto flex flex-col md:flex-row gap-12 items-end justify-between">
+<div class="max-w-2xl">
+<span class="text-primary-container font-bold tracking-widest text-sm uppercase block mb-4">Protocol 04 // Documentation</span>
+<h2 class="text-6xl md:text-8xl font-black text-[#EEE7D4] uppercase leading-none tracking-tighter">Technical FAQ</h2>
+<p class="mt-8 text-on-surface-variant text-lg leading-relaxed max-w-xl">
+                        The Iron &amp; Thread edition represents our commitment to industrial-grade textile engineering. Every garment is a documented asset. Explore our operational logic below.
+                    </p>
+</div>
+<div class="hidden md:block w-32 h-32 border-l border-t border-[#912825]/30"></div>
+</div>
+</section>
+<!-- FAQ Content Grid -->
+<section class="max-w-7xl mx-auto px-6 py-24 grid grid-cols-1 lg:grid-cols-12 gap-16">
+<!-- Sidebar Labels / Specs -->
+<div class="lg:col-span-3 space-y-12">
+<div class="border-t border-[#EEE7D4]/10 pt-6">
+<p class="text-[10px] font-bold text-[#EEE7D4]/40 uppercase tracking-[0.2em] mb-2">Build Identifier</p>
+<p class="text-sm font-medium text-[#EEE7D4]">IT-2024-SYSTEM-A</p>
+</div>
+<div class="border-t border-[#EEE7D4]/10 pt-6">
+<p class="text-[10px] font-bold text-[#EEE7D4]/40 uppercase tracking-[0.2em] mb-2">Last Sync</p>
+<p class="text-sm font-medium text-[#EEE7D4]">24.08.23 // 0400 PST</p>
+</div>
+<div class="pt-8">
+<div class="relative w-full aspect-square bg-[#131313] p-4 flex items-center justify-center">
+<img class="w-full h-full object-cover opacity-60 grayscale hover:grayscale-0 transition-all duration-700" data-alt="Close up of heavy duty industrial sewing machine needle piercing dark thick denim with red thread highlights" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC33F7_oYGaU4a8xWlQ6bvSaZHNLRIS-YLOfTP3WnAwKpz-bWIJU5JpUO9gT2Lw7LMAuP5HuRHoaR4qCzC0upAJJgGWU_L_8DKe2wWjUu7xmvJ_T-_O_h-iTzf51xgAblHUayBcAY3jo6lfI6Ye68Cszw3nBlIUnTBZ77l5vgrcNp4hS3xDLTocOUpJKB3Rex9Ipks5tN5O4eHK_62eeodhvyFk08zvw9-a_t2W1MvTmukN4Z34CElcAFY4SgkITAeDALnPZm-PaWhC"/>
+<div class="absolute inset-0 border border-[#912825]/20 m-2"></div>
+</div>
+</div>
+</div>
+<!-- Accordion Sections -->
+<div class="lg:col-span-9 space-y-24">
+<!-- Category: Materiality -->
+<div>
+<div class="flex items-center gap-4 mb-12">
+<div class="h-px flex-1 bg-gradient-to-r from-transparent via-[#EEE7D4]/20 to-transparent"></div>
+<h3 class="text-xs font-black text-tertiary-fixed tracking-[0.4em] uppercase">Materiality &amp; Integrity</h3>
+<div class="h-px flex-1 bg-gradient-to-r from-transparent via-[#EEE7D4]/20 to-transparent"></div>
+</div>
+<div class="space-y-4">
+<!-- FAQ Item -->
+<div class="group bg-[#131313]/40 border-l-2 border-transparent hover:border-[#912825] transition-all duration-300">
+<div class="p-8 flex justify-between items-start cursor-pointer">
+<div>
+<span class="text-[10px] text-primary-container font-bold mb-2 block uppercase">Spec-011</span>
+<h4 class="text-xl font-bold text-[#EEE7D4] uppercase">What is the GSM density of the Iron &amp; Thread collection?</h4>
+</div>
+<span class="material-symbols-outlined text-[#EEE7D4]/40 group-hover:text-[#912825]" data-icon="add">add</span>
+</div>
+<div class="px-8 pb-8 text-on-surface-variant/80 max-w-2xl leading-relaxed">
+                                Our heavy-duty chassis pieces utilize 500GSM brushed technical fleece, while the utility layers are built with 280GSM mercerized cotton. This ensures a silhouette that maintains structural integrity over long-term deployment.
+                            </div>
+</div>
+<div class="group bg-[#131313]/40 border-l-2 border-transparent hover:border-[#912825] transition-all duration-300">
+<div class="p-8 flex justify-between items-start cursor-pointer">
+<div>
+<span class="text-[10px] text-primary-container font-bold mb-2 block uppercase">Spec-012</span>
+<h4 class="text-xl font-bold text-[#EEE7D4] uppercase">How are the industrial finishes applied?</h4>
+</div>
+<span class="material-symbols-outlined text-[#EEE7D4]/40" data-icon="add">add</span>
+</div>
+<div class="px-8 pb-8 text-on-surface-variant/80 max-w-2xl hidden">
+                                Each unit undergoes a proprietary enzymatic wash followed by a cold-press finish. High-wear zones are reinforced with triple-needle safety stitching.
+                            </div>
+</div>
+</div>
+</div>
+<!-- Category: Distribution Logic -->
+<div>
+<div class="flex items-center gap-4 mb-12">
+<div class="h-px flex-1 bg-gradient-to-r from-transparent via-[#EEE7D4]/20 to-transparent"></div>
+<h3 class="text-xs font-black text-tertiary-fixed tracking-[0.4em] uppercase">Distribution Logic</h3>
+<div class="h-px flex-1 bg-gradient-to-r from-transparent via-[#EEE7D4]/20 to-transparent"></div>
+</div>
+<div class="space-y-4">
+<div class="group bg-[#131313]/40 border-l-2 border-transparent hover:border-[#912825] transition-all duration-300">
+<div class="p-8 flex justify-between items-start cursor-pointer">
+<div>
+<span class="text-[10px] text-primary-container font-bold mb-2 block uppercase">Log-021</span>
+<h4 class="text-xl font-bold text-[#EEE7D4] uppercase">Order processing and sync timelines</h4>
+</div>
+<span class="material-symbols-outlined text-[#EEE7D4]/40" data-icon="add">add</span>
+</div>
+<div class="px-8 pb-8 text-on-surface-variant/80 max-w-2xl leading-relaxed">
+                                Assets are processed within 24-48 operational hours. Tracking telemetry is synchronized automatically to your provided communication terminal upon dispatch from the atelier.
+                            </div>
+</div>
+<div class="group bg-[#131313]/40 border-l-2 border-transparent hover:border-[#912825] transition-all duration-300">
+<div class="p-8 flex justify-between items-start cursor-pointer">
+<div>
+<span class="text-[10px] text-primary-container font-bold mb-2 block uppercase">Log-022</span>
+<h4 class="text-xl font-bold text-[#EEE7D4] uppercase">Global deployment protocols</h4>
+</div>
+<span class="material-symbols-outlined text-[#EEE7D4]/40" data-icon="add">add</span>
+</div>
+<div class="px-8 pb-8 text-on-surface-variant/80 max-w-2xl hidden">
+                                We utilize secure logistics partners for international shipping. Duties and taxes are calculated at checkout based on regional industrial trade agreements.
+                            </div>
+</div>
+</div>
+</div>
+<!-- Category: Ecological Ethics -->
+<div>
+<div class="flex items-center gap-4 mb-12">
+<div class="h-px flex-1 bg-gradient-to-r from-transparent via-[#EEE7D4]/20 to-transparent"></div>
+<h3 class="text-xs font-black text-tertiary-fixed tracking-[0.4em] uppercase">Ecological Ethics</h3>
+<div class="h-px flex-1 bg-gradient-to-r from-transparent via-[#EEE7D4]/20 to-transparent"></div>
+</div>
+<div class="space-y-4">
+<div class="group bg-[#131313]/40 border-l-2 border-transparent hover:border-[#912825] transition-all duration-300">
+<div class="p-8 flex justify-between items-start cursor-pointer">
+<div>
+<span class="text-[10px] text-primary-container font-bold mb-2 block uppercase">Eth-031</span>
+<h4 class="text-xl font-bold text-[#EEE7D4] uppercase">Waste mitigation &amp; recycled components</h4>
+</div>
+<span class="material-symbols-outlined text-[#EEE7D4]/40" data-icon="add">add</span>
+</div>
+<div class="px-8 pb-8 text-on-surface-variant/80 max-w-2xl leading-relaxed">
+                                919DESIGNS employs a zero-waste cutting algorithm. All textile off-cuts are pulverized and reintegrated into our modular packaging system. We utilize 100% recycled polyester for all internal branding labels.
+                            </div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Technical Spec Gauge Section (Custom Component) -->
+<section class="max-w-7xl mx-auto px-6 py-12">
+<div class="bg-surface-container-high p-12 border-l-8 border-primary-container">
+<div class="flex flex-col md:flex-row justify-between items-center gap-8">
+<div>
+<h5 class="text-xs font-bold text-primary-container tracking-widest uppercase mb-2">Atelier Load Status</h5>
+<p class="text-[#EEE7D4] text-lg">Machine calibration: 98.4% Precision</p>
+</div>
+<div class="flex-1 w-full max-w-md bg-[#131313] h-1.5 relative overflow-hidden">
+<div class="absolute top-0 left-0 h-full bg-primary-container w-[98.4%]"></div>
+</div>
+<div class="text-right">
+<p class="text-tertiary-fixed text-sm uppercase tracking-tighter">Ready for deployment</p>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="w-full py-12 px-8 flex flex-col md:flex-row justify-between items-start gap-8 bg-[#506673] border-t border-[#EEE7D4]/10">
+<div class="flex flex-col gap-4">
+<h2 class="text-lg font-bold text-[#EEE7D4]">919DESIGNS</h2>
+<p class="font-['Space_Grotesk'] text-xs leading-loose uppercase tracking-wider text-[#EEE7D4]/70">© 2024 919DESIGNS INDUSTRIAL ATELIER</p>
+</div>
+<div class="flex flex-wrap gap-8">
+<a class="font-['Space_Grotesk'] text-xs leading-loose uppercase tracking-wider text-[#EEE7D4]/70 hover:text-[#912825] transition-colors" href="#">Technical Specs</a>
+<a class="font-['Space_Grotesk'] text-xs leading-loose uppercase tracking-wider text-[#EEE7D4]/70 hover:text-[#912825] transition-colors" href="#">Shipping Log</a>
+<a class="font-['Space_Grotesk'] text-xs leading-loose uppercase tracking-wider text-[#EEE7D4]/70 hover:text-[#912825] transition-colors" href="#">Privacy Protocol</a>
+<a class="font-['Space_Grotesk'] text-xs leading-loose uppercase tracking-wider text-[#EEE7D4]/70 hover:text-[#912825] transition-colors" href="#">Terms of Craft</a>
+</div>
+</footer>
+<!-- BottomNavBar (Mobile Only) -->
+<nav class="md:hidden fixed bottom-0 left-0 w-full z-50 flex justify-around items-center px-4 h-20 bg-[#131313]">
+<a class="flex flex-col items-center justify-center text-[#EEE7D4]/60 active:opacity-80 transition-all" href="#">
+<span class="material-symbols-outlined" data-icon="grid_view">grid_view</span>
+<span class="font-['Space_Grotesk'] text-[10px] uppercase tracking-widest font-bold">Catalog</span>
+</a>
+<a class="flex flex-col items-center justify-center text-[#EEE7D4]/60 active:opacity-80 transition-all" href="#">
+<span class="material-symbols-outlined" data-icon="edit_note">edit_note</span>
+<span class="font-['Space_Grotesk'] text-[10px] uppercase tracking-widest font-bold">Custom</span>
+</a>
+<a class="flex flex-col items-center justify-center text-[#EEE7D4]/60 active:opacity-80 transition-all" href="#">
+<span class="material-symbols-outlined" data-icon="photo_library">photo_library</span>
+<span class="font-['Space_Grotesk'] text-[10px] uppercase tracking-widest font-bold">Gallery</span>
+</a>
+<a class="flex flex-col items-center justify-center bg-[#912825] text-[#EEE7D4] rounded-none px-4 py-1 active:opacity-80 transition-all" href="#">
+<span class="material-symbols-outlined" data-icon="help_outline">help_outline</span>
+<span class="font-['Space_Grotesk'] text-[10px] uppercase tracking-widest font-bold">FAQ</span>
+</a>
+</nav>
+</body></html>

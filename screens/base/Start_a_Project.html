@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Project Intake | 919DESIGNS</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700;900&amp;family=Inter:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "on-tertiary-fixed-variant": "#5e4100",
+                        "surface-container-low": "#1c1b1b",
+                        "tertiary": "#ffba27",
+                        "on-error-container": "#ffdad6",
+                        "on-tertiary-fixed": "#271900",
+                        "surface-bright": "#393939",
+                        "surface-tint": "#ffb3b1",
+                        "on-background": "#e5e2e1",
+                        "tertiary-fixed-dim": "#ffba27",
+                        "on-primary-fixed": "#410007",
+                        "on-secondary-fixed-variant": "#404940",
+                        "on-error": "#690005",
+                        "on-tertiary": "#422c00",
+                        "on-primary-container": "#fff2f1",
+                        "on-secondary": "#2a322b",
+                        "error": "#ffb4ab",
+                        "surface": "#131313",
+                        "surface-container": "#201f1f",
+                        "primary-container": "#d42b3b",
+                        "inverse-primary": "#bb152c",
+                        "surface-container-high": "#2a2a2a",
+                        "surface-container-highest": "#353534",
+                        "on-secondary-container": "#afb8ad",
+                        "tertiary-container": "#936800",
+                        "on-secondary-fixed": "#161d16",
+                        "on-primary": "#680011",
+                        "outline-variant": "#5b403d",
+                        "on-tertiary-container": "#fff3e5",
+                        "surface-variant": "#353534",
+                        "secondary": "#c0c9be",
+                        "on-surface-variant": "#e4beba",
+                        "inverse-surface": "#e5e2e1",
+                        "primary-fixed-dim": "#ffb3b1",
+                        "secondary-fixed-dim": "#c0c9be",
+                        "surface-dim": "#131313",
+                        "secondary-container": "#404940",
+                        "primary": "#ffb3b1",
+                        "on-surface": "#e5e2e1",
+                        "inverse-on-surface": "#313030",
+                        "secondary-fixed": "#dce5d9",
+                        "background": "#131313",
+                        "surface-container-lowest": "#0e0e0e",
+                        "error-container": "#93000a",
+                        "primary-fixed": "#ffdad8",
+                        "on-primary-fixed-variant": "#92001c",
+                        "outline": "#ab8985",
+                        "tertiary-fixed": "#ffdea9"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "0.75rem"
+                    },
+                    "fontFamily": {
+                        "headline": ["Space Grotesk"],
+                        "body": ["Inter"],
+                        "label": ["Space Grotesk"]
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+        body {
+            background-color: #131313;
+            color: #e5e2e1;
+            font-family: 'Inter', sans-serif;
+        }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .strobe-glow {
+            box-shadow: 0 0 15px rgba(212, 43, 59, 0.4);
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background text-on-background min-h-screen">
+<!-- TopAppBar -->
+<header class="bg-[#131313]/80 backdrop-blur-xl docked full-width top-0 sticky z-50 bg-gradient-to-b from-[#1c1c1c] to-transparent">
+<div class="flex justify-between items-center px-6 py-4 w-full">
+<div class="flex items-center gap-4">
+<span class="material-symbols-outlined text-white/70 hover:text-[#D32F2F] transition-colors duration-300">menu</span>
+<span class="text-xl font-black text-white tracking-tighter italic font-['Space_Grotesk'] uppercase">919DESIGNS</span>
+</div>
+<div class="hidden md:flex gap-8 items-center font-['Space_Grotesk'] font-bold tracking-tighter uppercase">
+<a class="text-white/70 hover:text-[#D32F2F] transition-colors duration-300" href="#">Home</a>
+<a class="text-white/70 hover:text-[#D32F2F] transition-colors duration-300" href="#">Services</a>
+<a class="text-white/70 hover:text-[#D32F2F] transition-colors duration-300" href="#">Gallery</a>
+<a class="text-[#D32F2F] transition-colors duration-300 underline underline-offset-8" href="#">Order</a>
+</div>
+<div class="flex items-center gap-4">
+<span class="material-symbols-outlined text-white/70 hover:text-[#D32F2F] transition-colors duration-300">shopping_cart</span>
+</div>
+</div>
+</header>
+<main class="max-w-7xl mx-auto px-6 py-12 md:py-24 grid grid-cols-1 lg:grid-cols-12 gap-12">
+<!-- Hero & Context Section -->
+<div class="lg:col-span-5 flex flex-col justify-start">
+<div class="inline-flex items-center gap-2 mb-6">
+<div class="w-2 h-2 rounded-full bg-primary-container strobe-glow"></div>
+<span class="font-label text-sm uppercase tracking-[0.2em] text-primary">Intake Active</span>
+</div>
+<h1 class="font-headline text-5xl md:text-7xl font-black tracking-tighter uppercase mb-6 leading-none">
+                Precision <br/><span class="text-primary-container">Execution.</span>
+</h1>
+<p class="font-body text-lg text-secondary max-w-md mb-8 leading-relaxed">
+                Whether it's rugged embroidery or high-fidelity DTF printing, we handle every stitch and pixel with mechanical accuracy. 
+            </p>
+<div class="bg-surface-container-low p-6 border-l-4 border-primary-container">
+<p class="font-body italic text-on-surface-variant">
+                    "Fill out the details below and I'll personally review your project specifications to ensure we deliver exactly what you're looking for."
+                </p>
+<div class="flex items-center gap-4 mt-6">
+<div class="w-12 h-12 rounded-full bg-surface-container-highest overflow-hidden">
+<img class="w-full h-full object-cover" data-alt="portrait of Jeff, a professional craftsman with a confident smile in a workshop environment" src="https://lh3.googleusercontent.com/aida-public/AB6AXuADa8RWJjLa9EajfNbvnJYSArGTxnrmpqzwev024mpWQl-mPw2Vh2mzIC6_rWJnr62c4UVSn3MozkVnzbSx3pAAJ0QThuH_zvCy2g1itKt2shTLD3v6KLgmkvc10VaHnoFoPYIGlMpCPK4sWTN66KWZw08o7cVvEEebiR-kuV5mr3-XjvXe0lVwXDEj5nm9SGF9-qAtzdq2jvVkPvIKex1cVocJE_6DSG9dyb13SwBjf-ia7PCxEr7DudO1l7i_5nTncORgYMFRp5oa"/>
+</div>
+<div>
+<p class="font-headline font-bold uppercase text-sm tracking-widest">Jeff</p>
+<p class="font-label text-[10px] text-tertiary uppercase">Founder &amp; Lead Technician</p>
+</div>
+</div>
+</div>
+<div class="mt-12 hidden lg:block">
+<img class="rounded-lg grayscale hover:grayscale-0 transition-all duration-700" data-alt="close-up macro shot of high-quality embroidery thread on a commercial machine with industrial lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBVemQBgbpzHmIr-187xeSy-sLGc3f_J6MWxKbu--hEeMDqYNb3UJYs0iJw7dJ4HLB_ja5SoBmpPjOKu2d701_bAD0mFo9gT_HM73iG7wG9UpvO1OzM6t0yzyrXqRRm8Gj_n2EgZFdDX3tck5gqwqy4y-JZgTeP0MXFe3sfqIRp3bM9eBBLxxX78SmP6nc19M6aK-5EMdCA1F8dTDNdbeTKwRZDhJN--uT_eYcdfV55hjG6QLXhR39e1WJv6fSJkH1NiSexJ34x70qx"/>
+</div>
+</div>
+<!-- Form Section -->
+<div class="lg:col-span-7">
+<div class="bg-surface-container-lowest p-8 md:p-12 border border-outline-variant/10 shadow-2xl">
+<h2 class="font-headline text-2xl font-bold uppercase tracking-tight mb-8 flex items-center gap-3">
+<span class="material-symbols-outlined text-primary-container">settings_input_component</span>
+                    Project Specifications
+                </h2>
+<form class="space-y-8">
+<!-- Identity Block -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+<div class="flex flex-col gap-2">
+<label class="font-label text-[10px] uppercase tracking-widest text-secondary-fixed-dim">Full Name</label>
+<input class="bg-surface-container-low border-0 border-b-2 border-transparent focus:border-primary-container focus:ring-0 text-on-surface py-3 px-4 transition-all" placeholder="EX. JOHN DOE" type="text"/>
+</div>
+<div class="flex flex-col gap-2">
+<label class="font-label text-[10px] uppercase tracking-widest text-secondary-fixed-dim">Email Address</label>
+<input class="bg-surface-container-low border-0 border-b-2 border-transparent focus:border-primary-container focus:ring-0 text-on-surface py-3 px-4 transition-all" placeholder="EX. CONTACT@DOMAIN.COM" type="email"/>
+</div>
+<div class="flex flex-col gap-2">
+<label class="font-label text-[10px] uppercase tracking-widest text-secondary-fixed-dim">Phone Number</label>
+<input class="bg-surface-container-low border-0 border-b-2 border-transparent focus:border-primary-container focus:ring-0 text-on-surface py-3 px-4 transition-all" placeholder="EX. 919-555-0123" type="tel"/>
+</div>
+<div class="flex flex-col gap-2">
+<label class="font-label text-[10px] uppercase tracking-widest text-secondary-fixed-dim">Company / Organization</label>
+<input class="bg-surface-container-low border-0 border-b-2 border-transparent focus:border-primary-container focus:ring-0 text-on-surface py-3 px-4 transition-all" placeholder="EX. MOTOCROSS TEAM ALPHA" type="text"/>
+</div>
+</div>
+<!-- Project Specs Block -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6 pt-4">
+<div class="flex flex-col gap-2">
+<label class="font-label text-[10px] uppercase tracking-widest text-secondary-fixed-dim">Type of Project</label>
+<select class="bg-surface-container-low border-0 border-b-2 border-transparent focus:border-primary-container focus:ring-0 text-on-surface py-3 px-4 transition-all appearance-none cursor-pointer">
+<option>EMBROIDERY</option>
+<option>DTF PRINTING</option>
+<option>BOTH SERVICES</option>
+</select>
+</div>
+<div class="flex flex-col gap-2">
+<label class="font-label text-[10px] uppercase tracking-widest text-secondary-fixed-dim">Quantity Estimate</label>
+<input class="bg-surface-container-low border-0 border-b-2 border-transparent focus:border-primary-container focus:ring-0 text-on-surface py-3 px-4 transition-all" placeholder="EX. 50" type="number"/>
+</div>
+</div>
+<!-- Narrative Block -->
+<div class="flex flex-col gap-2 pt-4">
+<label class="font-label text-[10px] uppercase tracking-widest text-secondary-fixed-dim">Tell us about your project</label>
+<textarea class="bg-surface-container-low border-0 border-b-2 border-transparent focus:border-primary-container focus:ring-0 text-on-surface py-3 px-4 transition-all resize-none" placeholder="DESCRIBE YOUR VISION, PLACEMENT, AND SPECIFIC NEEDS..." rows="4"></textarea>
+</div>
+<!-- Action Block -->
+<div class="pt-6 flex flex-col md:flex-row items-center justify-between gap-6">
+<p class="font-body text-xs text-secondary-fixed-dim/60 italic max-w-xs">
+                            Submission confirms review of our precision standards and turnaround times.
+                        </p>
+<button class="w-full md:w-auto bg-gradient-to-br from-primary to-primary-container text-on-primary font-headline font-bold uppercase tracking-tighter py-4 px-12 transition-transform active:scale-95 shadow-lg flex items-center justify-center gap-2">
+                            Submit Request
+                            <span class="material-symbols-outlined text-lg">arrow_forward</span>
+</button>
+</div>
+</form>
+</div>
+</div>
+</main>
+<!-- Footer -->
+<footer class="bg-[#0a0a0a] block w-full">
+<div class="bg-[#131313] py-12 px-6 flex flex-col items-start space-y-4 pb-24 max-w-7xl mx-auto">
+<span class="text-lg font-black text-[#D32F2F] mb-4 font-headline tracking-tighter italic uppercase">919DESIGNS</span>
+<div class="flex flex-wrap gap-8 font-['Inter'] text-xs font-medium tracking-normal">
+<a class="text-white/40 hover:text-[#D32F2F] transition-all" href="#">Services</a>
+<a class="text-white/40 hover:text-[#D32F2F] transition-all" href="#">Privacy</a>
+<a class="text-white/40 hover:text-[#D32F2F] transition-all" href="#">Terms</a>
+<a class="text-white/40 hover:text-[#D32F2F] transition-all" href="#">Contact</a>
+</div>
+<p class="font-label text-[10px] tracking-[0.2em] text-white/30 uppercase mt-8">
+                © 2024 919DESIGNS. PRECISION BUILT.
+            </p>
+</div>
+</footer>
+<!-- BottomNavBar (Mobile Only) -->
+<nav class="md:hidden bg-[#131313]/90 backdrop-blur-2xl fixed bottom-0 left-0 w-full flex justify-around items-center h-16 px-2 z-50 border-t border-white/5 shadow-[0_-8px_32px_rgba(0,0,0,0.5)]">
+<a class="flex flex-col items-center justify-center text-white/50 px-4 py-1 font-['Space_Grotesk'] text-[10px] font-bold tracking-widest uppercase hover:text-white transition-all" href="#">
+<span class="material-symbols-outlined mb-1">home</span>
+            Home
+        </a>
+<a class="flex flex-col items-center justify-center text-white/50 px-4 py-1 font-['Space_Grotesk'] text-[10px] font-bold tracking-widest uppercase hover:text-white transition-all" href="#">
+<span class="material-symbols-outlined mb-1">settings_suggest</span>
+            Services
+        </a>
+<a class="flex flex-col items-center justify-center text-white/50 px-4 py-1 font-['Space_Grotesk'] text-[10px] font-bold tracking-widest uppercase hover:text-white transition-all" href="#">
+<span class="material-symbols-outlined mb-1">grid_view</span>
+            Gallery
+        </a>
+<a class="flex flex-col items-center justify-center bg-[#D32F2F] text-white rounded-sm px-4 py-1 font-['Space_Grotesk'] text-[10px] font-bold tracking-widest uppercase translate-y-[-2px]" href="#">
+<span class="material-symbols-outlined mb-1">add_circle</span>
+            Order
+        </a>
+</nav>
+</body></html>

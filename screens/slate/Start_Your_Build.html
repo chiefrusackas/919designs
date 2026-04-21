@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,wght@0,400;0,700;1,400;1,700&amp;family=Public+Sans:wght@300;400;600;800&amp;family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "on-error": "#690005",
+                    "on-tertiary": "#00363d",
+                    "tertiary-container": "#005762",
+                    "on-error-container": "#ffdad6",
+                    "surface-bright": "#263c48",
+                    "secondary": "#cdc6b4",
+                    "surface-container-low": "#061e29",
+                    "surface-tint": "#ffb3ac",
+                    "on-secondary-container": "#bbb5a3",
+                    "on-secondary": "#333024",
+                    "on-tertiary-container": "#89cbd7",
+                    "on-tertiary-fixed": "#001f24",
+                    "outline": "#a68a88",
+                    "on-primary-container": "#ffaaa2",
+                    "on-primary-fixed-variant": "#86201e",
+                    "outline-variant": "#57413f",
+                    "error": "#ffb4ab",
+                    "on-secondary-fixed-variant": "#4a4739",
+                    "inverse-on-surface": "#1d333f",
+                    "on-primary": "#66060b",
+                    "primary-fixed-dim": "#ffb3ac",
+                    "surface": "#001620",
+                    "primary-container": "#912825",
+                    "secondary-fixed": "#e9e2cf",
+                    "surface-variant": "#213743",
+                    "secondary-fixed-dim": "#cdc6b4",
+                    "tertiary-fixed-dim": "#8fd1de",
+                    "surface-container": "#0a222d",
+                    "inverse-primary": "#a73833",
+                    "tertiary": "#8fd1de",
+                    "on-surface-variant": "#dec0bc",
+                    "surface-container-lowest": "#001019",
+                    "on-primary-fixed": "#410003",
+                    "tertiary-fixed": "#abedfa",
+                    "error-container": "#93000a",
+                    "on-tertiary-fixed-variant": "#004f59",
+                    "surface-container-high": "#162d38",
+                    "primary": "#ffb3ac",
+                    "inverse-surface": "#cee6f5",
+                    "surface-container-highest": "#213743",
+                    "background": "#001620",
+                    "secondary-container": "#4a4739",
+                    "on-background": "#cee6f5",
+                    "on-secondary-fixed": "#1e1c10",
+                    "on-surface": "#cee6f5",
+                    "primary-fixed": "#ffdad6",
+                    "surface-dim": "#001620"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.125rem",
+                    "lg": "0.25rem",
+                    "xl": "0.5rem",
+                    "full": "0.75rem"
+            },
+            "fontFamily": {
+                    "headline": ["Newsreader"],
+                    "body": ["Public Sans"],
+                    "label": ["Public Sans"]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        body {
+            background-color: #506673; /* Industrial Slate Canvas */
+            color: #EEE7D4;
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="font-body selection:bg-primary-container selection:text-on-primary">
+<!-- TopAppBar -->
+<header class="fixed top-0 w-full z-50 bg-slate-600/60 dark:bg-[#506673]/60 backdrop-blur-xl shadow-[0_64px_64px_-12px_rgba(0,16,25,0.06)]">
+<div class="flex items-center justify-between px-6 py-4 w-full max-w-none">
+<div class="flex items-center gap-4">
+<button class="hover:bg-white/5 transition-colors p-2 rounded-md active:scale-95 duration-200">
+<span class="material-symbols-outlined text-[#EEE7D4]">menu</span>
+</button>
+</div>
+<h1 class="font-['Newsreader'] italic tracking-tight text-[#EEE7D4] text-3xl font-bold tracking-tighter uppercase">919DESIGNS</h1>
+<div class="flex items-center gap-4">
+<button class="hover:bg-white/5 transition-colors p-2 rounded-md active:scale-95 duration-200">
+<span class="material-symbols-outlined text-[#EEE7D4]">shopping_bag</span>
+</button>
+</div>
+</div>
+</header>
+<main class="pt-24 pb-32 px-6 md:px-12 max-w-7xl mx-auto">
+<!-- Hero Section -->
+<section class="mb-16">
+<div class="grid grid-cols-1 md:grid-cols-12 gap-8 items-end">
+<div class="md:col-span-8">
+<span class="font-label text-[0.6875rem] uppercase tracking-[0.2em] text-[#EEE7D4]/60 mb-4 block">Bespoke Manufacturing Phase 01</span>
+<h2 class="font-headline text-5xl md:text-7xl font-bold text-[#EEE7D4] leading-[0.9] -tracking-widest">
+                        START YOUR <br/>
+<span class="italic text-[#912825]">BUILD.</span>
+</h2>
+</div>
+<div class="md:col-span-4">
+<p class="font-body text-lg text-[#EEE7D4]/80 leading-relaxed border-l border-[#912825]/30 pl-6">
+                        Every masterpiece begins with a technical specification. Define your parameters and engineer your permanence.
+                    </p>
+</div>
+</div>
+</section>
+<!-- Intake Form Grid -->
+<form class="space-y-12">
+<!-- Step 1: Category Selection -->
+<div class="bg-surface-container-highest p-8 md:p-12 rounded-lg">
+<h3 class="font-label text-sm uppercase tracking-[0.1em] text-[#EEE7D4]/50 mb-8 flex items-center gap-3">
+<span class="w-8 h-[1px] bg-[#912825]"></span> 01 / Category Selection
+                </h3>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+<label class="relative cursor-pointer group">
+<input checked="" class="peer sr-only" name="category" type="radio"/>
+<div class="h-full p-6 bg-surface-container-low peer-checked:bg-[#912825] transition-all duration-300 rounded-lg">
+<span class="material-symbols-outlined text-4xl mb-4 block" data-icon="apparel">apparel</span>
+<h4 class="text-xl font-bold uppercase tracking-tighter">Garment System</h4>
+<p class="text-sm opacity-60 mt-2">Industrial grade textiles engineered for high-density utility.</p>
+</div>
+</label>
+<label class="relative cursor-pointer group">
+<input class="peer sr-only" name="category" type="radio"/>
+<div class="h-full p-6 bg-surface-container-low peer-checked:bg-[#912825] transition-all duration-300 rounded-lg">
+<span class="material-symbols-outlined text-4xl mb-4 block" data-icon="hardware">hardware</span>
+<h4 class="text-xl font-bold uppercase tracking-tighter">Architectural Gear</h4>
+<p class="text-sm opacity-60 mt-2">Structural accessories designed for mechanical longevity.</p>
+</div>
+</label>
+<label class="relative cursor-pointer group">
+<input class="peer sr-only" name="category" type="radio"/>
+<div class="h-full p-6 bg-surface-container-low peer-checked:bg-[#912825] transition-all duration-300 rounded-lg">
+<span class="material-symbols-outlined text-4xl mb-4 block" data-icon="precision_manufacturing">precision_manufacturing</span>
+<h4 class="text-xl font-bold uppercase tracking-tighter">Prototype Beta</h4>
+<p class="text-sm opacity-60 mt-2">Custom R&amp;D projects requiring unique machining.</p>
+</div>
+</label>
+</div>
+</div>
+<!-- Step 2: Technical Specifications -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+<div class="bg-surface-container-low p-8 rounded-lg space-y-8">
+<h3 class="font-label text-sm uppercase tracking-[0.1em] text-[#EEE7D4]/50 mb-4 flex items-center gap-3">
+<span class="w-8 h-[1px] bg-[#912825]"></span> 02 / Dimensional Data
+                    </h3>
+<div class="space-y-4">
+<div class="group">
+<label class="font-label text-[10px] uppercase tracking-widest text-[#EEE7D4]/40 block mb-2">Subject Full Name</label>
+<input class="w-full bg-surface-container-lowest border-none focus:ring-0 text-[#EEE7D4] py-4 px-0 border-b-2 border-transparent focus:border-[#912825] transition-all placeholder:text-[#EEE7D4]/20 uppercase font-bold tracking-widest" placeholder="IDENTITY REQUIRED" type="text"/>
+</div>
+<div class="group">
+<label class="font-label text-[10px] uppercase tracking-widest text-[#EEE7D4]/40 block mb-2">Primary Contact Protocol</label>
+<input class="w-full bg-surface-container-lowest border-none focus:ring-0 text-[#EEE7D4] py-4 px-0 border-b-2 border-transparent focus:border-[#912825] transition-all placeholder:text-[#EEE7D4]/20 uppercase font-bold tracking-widest" placeholder="ENCRYPTED EMAIL" type="email"/>
+</div>
+</div>
+</div>
+<div class="bg-surface-container-low p-8 rounded-lg space-y-8">
+<h3 class="font-label text-sm uppercase tracking-[0.1em] text-[#EEE7D4]/50 mb-4 flex items-center gap-3">
+<span class="w-8 h-[1px] bg-[#912825]"></span> 03 / Visual Reference
+                    </h3>
+<div class="relative border-2 border-dashed border-[#EEE7D4]/10 rounded-lg p-12 text-center hover:border-[#912825]/50 transition-all cursor-pointer">
+<input class="absolute inset-0 opacity-0 cursor-pointer" type="file"/>
+<span class="material-symbols-outlined text-5xl text-[#912825] mb-4 block" data-icon="cloud_upload">cloud_upload</span>
+<p class="font-bold uppercase tracking-tighter text-lg">Upload Blueprints</p>
+<p class="text-xs text-[#EEE7D4]/40 mt-1 uppercase tracking-widest">PDF, DXF, or High-Res Imagery</p>
+</div>
+</div>
+</div>
+<!-- Step 3: Material & Finish -->
+<div class="bg-surface-container-highest p-8 md:p-12 rounded-lg">
+<h3 class="font-label text-sm uppercase tracking-[0.1em] text-[#EEE7D4]/50 mb-8 flex items-center gap-3">
+<span class="w-8 h-[1px] bg-[#912825]"></span> 04 / Finish Parameters
+                </h3>
+<div class="grid grid-cols-1 md:grid-cols-12 gap-8">
+<div class="md:col-span-4 h-64 overflow-hidden rounded-lg">
+<img class="w-full h-full object-cover" data-alt="Close-up of industrial raw steel plates with brushed texture and subtle metallic reflections under dramatic lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCR7kMjqVPg_rXDr8Xh7GUm58fhY5_Cmz-e9jslYbcrgx8jfNymdn64p8k5awptpE13cqBNeVMepJb2SylvkKYDqYZTEvhkB2R96g2XyFZ1hS9tYNdwWSi1HpvWn5yrVzFhaBs8B9IZd8SCMboFXp2zx9FaU8t17LeE85gdMM1vHAT7kLlFa9hFty4vkl_CfEyyhjP-J3hq23bcLYWEqRUou41zGEeI6xadlUenlfzbnoVZ4Iqrcf6ywyBFpgwCF1ofGjWBdMwwymUr"/>
+</div>
+<div class="md:col-span-8 space-y-6">
+<div>
+<label class="font-label text-[10px] uppercase tracking-widest text-[#EEE7D4]/40 block mb-4">Construction Notes</label>
+<textarea class="w-full bg-surface-container-lowest border-none focus:ring-0 text-[#EEE7D4] py-4 px-4 rounded-lg placeholder:text-[#EEE7D4]/20 uppercase text-sm tracking-widest leading-relaxed" placeholder="DESCRIBE THE INTENDED DURABILITY AND LOAD-BEARING REQUIREMENTS..." rows="4"></textarea>
+</div>
+<div class="flex justify-end">
+<button class="bg-[#912825] text-[#EEE7D4] px-12 py-5 rounded-md font-bold uppercase tracking-[0.2em] text-sm hover:brightness-110 active:scale-95 transition-all shadow-xl" type="submit">
+                                INITIATE BUILD SEQUENCE
+                            </button>
+</div>
+</div>
+</div>
+</div>
+</form>
+</main>
+<!-- Footer -->
+<footer class="w-full py-12 px-8 bg-[#001019] mt-auto">
+<div class="flex flex-col md:flex-row justify-between items-center gap-6 w-full">
+<div class="font-['Newsreader'] text-lg text-[#EEE7D4]">919DESIGNS</div>
+<div class="font-['Public_Sans'] text-[11px] uppercase tracking-widest text-[#EEE7D4]/40 flex gap-8">
+<a class="hover:text-[#912825] transition-colors" href="#">Terms of Service</a>
+<a class="hover:text-[#912825] transition-colors" href="#">Privacy Policy</a>
+<a class="hover:text-[#912825] transition-colors" href="#">Shipping</a>
+</div>
+<div class="font-['Public_Sans'] text-[11px] uppercase tracking-widest text-[#EEE7D4]/40">
+                © 2024 919DESIGNS. ENGINEERED PERMANENCE.
+            </div>
+</div>
+</footer>
+<!-- BottomNavBar (Mobile Only) -->
+<nav class="md:hidden fixed bottom-0 left-0 w-full h-16 flex justify-around items-center px-4 pb-safe bg-slate-700/80 dark:bg-[#213743]/80 backdrop-blur-lg border-t border-white/10 z-50">
+<a class="flex flex-col items-center justify-center text-[#EEE7D4]/50 hover:text-[#EEE7D4] transition-all active:translate-y-0.5" href="#">
+<span class="material-symbols-outlined" data-icon="apparel">apparel</span>
+<span class="font-['Public_Sans'] text-[10px] uppercase tracking-[0.05em] font-bold">Catalog</span>
+</a>
+<a class="flex flex-col items-center justify-center text-[#EEE7D4] bg-[#912825] rounded-md px-4 py-1 active:translate-y-0.5" href="#">
+<span class="material-symbols-outlined" data-icon="edit_note">edit_note</span>
+<span class="font-['Public_Sans'] text-[10px] uppercase tracking-[0.05em] font-bold">Custom</span>
+</a>
+<a class="flex flex-col items-center justify-center text-[#EEE7D4]/50 hover:text-[#EEE7D4] transition-all active:translate-y-0.5" href="#">
+<span class="material-symbols-outlined" data-icon="photo_library">photo_library</span>
+<span class="font-['Public_Sans'] text-[10px] uppercase tracking-[0.05em] font-bold">Gallery</span>
+</a>
+<a class="flex flex-col items-center justify-center text-[#EEE7D4]/50 hover:text-[#EEE7D4] transition-all active:translate-y-0.5" href="#">
+<span class="material-symbols-outlined" data-icon="quiz">quiz</span>
+<span class="font-['Public_Sans'] text-[10px] uppercase tracking-[0.05em] font-bold">FAQ</span>
+</a>
+</nav>
+</body></html>

@@ -1,0 +1,61 @@
+@import "tailwindcss";
+
+@theme {
+  /* Site Background */
+  --color-background: #333333;
+  --color-surface: #333333;
+  
+  /* Large Section Backgrounds */
+  --color-surface-variant: #506673;
+  
+  /* Light Cream Text / Accents */
+  --color-on-surface: #EEE7D4;
+  --color-on-surface-variant: #EEE7D4;
+  
+  /* Deep Red Highlights */
+  --color-primary: #D32F2F;
+  --color-primary-container: #B71C1C;
+  --color-on-primary: #EEE7D4;
+  --color-on-primary-container: #EEE7D4;
+
+  /* Olive Accents / Borders */
+  --color-outline: #847F59;
+  --color-outline-variant: #847F59;
+  
+  /* Utilities for subtle animations */
+  --animate-scale-up: scale-up 0.2s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+
+  --font-headline: "Space Grotesk", sans-serif;
+  --font-body: "Space Grotesk", sans-serif;
+  --font-label: "Space Grotesk", sans-serif;
+
+  --radius-DEFAULT: 0px;
+  --radius-lg: 0px;
+  --radius-xl: 0px;
+  --radius-full: 9999px;
+}
+
+@layer base {
+  body {
+    font-family: var(--font-body);
+    background-color: var(--color-background);
+    color: var(--color-on-surface);
+    min-height: max(884px, 100dvh);
+  }
+
+  /* Force number input arrows to render light */
+  input[type="number"] {
+    color-scheme: dark;
+  }
+  
+  input[type="number"]::-webkit-inner-spin-button,
+  input[type="number"]::-webkit-outer-spin-button {
+    opacity: 1;
+    filter: brightness(1.7) contrast(1.5);
+  }
+}
+
+@keyframes scale-up {
+  0% { transform: scale(1); }
+  100% { transform: scale(1.02); }
+}

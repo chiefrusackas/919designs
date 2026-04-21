@@ -1,0 +1,40 @@
+{
+  "garments": [
+    "Hat",
+    "Hat: Snapback",
+    "T-shirt: Short Sleeve",
+    "T-shirt: Long Sleeve",
+    "Polo Shirt",
+    "Sweatshirt",
+    "Hoodie",
+    "Jacket"
+  ],
+  "decorations": [
+    "Embroidered",
+    "Patch",
+    "Printed Graphic"
+  ],
+  "placements": [
+    "Chest",
+    "Full Front",
+    "Full Back",
+    "L Shoulder",
+    "R Shoulder"
+  ],
+  "colors": [
+    { "name": "Black", "value": "#111111" },
+    { "name": "White", "value": "#F9F9F9" },
+    { "name": "Gray", "value": "#9CA3AF" },
+    { "name": "Charcoal", "value": "#374151" },
+    { "name": "Heather", "value": "#6B7280" },
+    { "name": "Navy Blue", "value": "#1E3A8A" },
+    { "name": "Royal Blue", "value": "#2563EB" },
+    { "name": "Red", "value": "#DC2626" },
+    { "name": "Green", "value": "#16A34A" },
+    { "name": "Olive Drab", "value": "#4D5D53" },
+    { "name": "Tan", "value": "#D2B48C" },
+    { "name": "Coyote Brown", "value": "#81613C" },
+    { "name": "Camouflage", "value": "repeating-linear-gradient(45deg, #4B5320, #4B5320 4px, #81613E 4px, #81613E 8px)" },
+    { "name": "Other", "value": "conic-gradient(from 0deg, red, yellow, lime, aqua, blue, magenta, red)" }
+  ]
+}
