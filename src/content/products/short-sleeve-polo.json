@@ -1,0 +1,35 @@
+{
+  "name": "Short Sleeve Polo",
+  "category": "Polo Shirts",
+  "price": "$45.00",
+  "status": "In Stock",
+  "image": "",
+  "sizes": [
+    {
+      "size": "S"
+    },
+    {
+      "size": "M"
+    },
+    {
+      "size": "L"
+    },
+    {
+      "size": "XL"
+    },
+    {
+      "size": "2XL"
+    }
+  ],
+  "colors": [
+    {
+      "color": "Black"
+    },
+    {
+      "color": "White"
+    },
+    {
+      "color": "Gray"
+    }
+  ]
+}

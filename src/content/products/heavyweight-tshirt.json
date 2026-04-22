@@ -1,0 +1,35 @@
+{
+  "name": "Heavyweight T-Shirt",
+  "category": "T-Shirts",
+  "price": "$40.00",
+  "status": "In Stock",
+  "image": "",
+  "sizes": [
+    {
+      "size": "S"
+    },
+    {
+      "size": "M"
+    },
+    {
+      "size": "L"
+    },
+    {
+      "size": "XL"
+    },
+    {
+      "size": "2XL"
+    }
+  ],
+  "colors": [
+    {
+      "color": "Black"
+    },
+    {
+      "color": "White"
+    },
+    {
+      "color": "Gray"
+    }
+  ]
+}

@@ -2,6 +2,12 @@ import { useState } from 'react';
 
 import configData from '../content/configurator.json';
 
+const productsData = import.meta.glob('../content/products/*.json', { eager: true });
+const outOfStockItems = Object.values(productsData)
+  .map(m => m.default || m)
+  .filter(p => p.out_of_stock)
+  .map(p => p.name);
+
 const GARMENTS = configData.garments || [];
 const DECORATIONS = configData.decorations || [];
 const PLACEMENTS = configData.placements || [];
@@ -435,7 +441,8 @@ export default function CustomBuild() {
           Configure
         </div>
         <h1 className="text-5xl md:text-7xl font-black uppercase text-on-surface leading-none tracking-tighter mb-12 relative text-shadow-sm">
-          Start Your<br />Custom Build
+          Start Your<br />
+          <span className="text-transparent bg-clip-text bg-gradient-to-r from-on-surface to-surface-variant">Custom Build.</span>
         </h1>
 
         {/* --- STEP 1: GARMENTS --- */}
@@ -448,19 +455,27 @@ export default function CustomBuild() {
            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
               {GARMENTS.map(g => {
                 const isActive = selections.garments.includes(g);
+                const isOutOfStock = outOfStockItems.includes(g);
                 return (
                   <button 
                     key={g} 
-                    onClick={() => toggleGarment(g)}
+                    onClick={() => !isOutOfStock && toggleGarment(g)}
+                    disabled={isOutOfStock}
                     className={`relative p-6 border text-left transition-all duration-200 ease-out flex items-center justify-between
                       ${isActive 
                         ? 'border-primary bg-primary text-on-primary ring-1 ring-primary transform scale-[1.02] shadow-[0_0_15px_rgba(145,40,37,0.3)] z-10' 
-                        : 'border-outline/40 bg-surface-variant text-on-surface hover:border-outline'
+                        : isOutOfStock
+                          ? 'border-outline/10 bg-surface-variant/30 text-on-surface/30 cursor-not-allowed grayscale'
+                          : 'border-outline/40 bg-surface-variant text-on-surface hover:border-outline'
                       }
                     `}
                   >
-                    <span className={`block font-black text-sm uppercase tracking-widest transition-colors`}>{g}</span>
+                    <div className="flex flex-col">
+                      <span className={`block font-black text-sm uppercase tracking-widest transition-colors`}>{g}</span>
+                      {isOutOfStock && <span className="text-[10px] text-primary font-bold uppercase tracking-widest mt-1">Sold Out</span>}
+                    </div>
                     {isActive && <span className="material-symbols-outlined ml-2">check_circle</span>}
+                    {isOutOfStock && <span className="material-symbols-outlined ml-2 opacity-40">block</span>}
                   </button>
                 )
               })}
@@ -616,7 +631,7 @@ export default function CustomBuild() {
                                   <span className="w-1.5 h-1.5 bg-outline rounded-full"></span>
                                   {category.label}
                                </h4>
-                               <div className="grid grid-cols-2 md:grid-cols-3 gap-2">
+                               <div className="grid grid-cols-2 sm:grid-cols-3 gap-2">
                                  {category.sizes.map(size => {
                                    const qty = alloc.sizes[category.label]?.[size] || '';
                                    const remQty = remaining[category.label]?.[size] || 0;
@@ -624,30 +639,32 @@ export default function CustomBuild() {
                                    const isExhausted = !isActive && remQty === 0;
 
                                    return (
-                                     <div key={size} className={`flex items-stretch border transition-all duration-200 
+                                     <div key={size} className={`flex flex-col border transition-all duration-200 
                                        ${isActive 
-                                          ? 'border-primary ring-1 ring-primary transform scale-[1.02] bg-surface z-10' 
+                                          ? 'border-primary ring-1 ring-primary bg-surface z-10' 
                                           : isExhausted 
                                             ? 'border-outline/20 bg-background/50 opacity-40 cursor-not-allowed'
                                             : 'border-outline/40 bg-background hover:border-outline'
                                        }`}
                                      >
-                                       <div className={`flex flex-col items-center justify-center w-[45%] border-r transition-colors duration-200 flex-shrink-0 px-2
+                                       <div className={`flex items-center justify-center border-b py-1.5 px-2 transition-colors duration-200
                                          ${isActive ? 'border-primary bg-primary text-on-primary font-black' : 'border-outline/40 text-on-surface font-bold'}
                                        `}>
-                                         <span className="text-sm tracking-wide">{size}</span>
+                                         <span className="text-xs tracking-wide">{size}</span>
                                        </div>
-                                       <div className="w-[55%] flex flex-col items-center justify-center px-1">
+                                       <div className="flex items-center justify-center px-1 py-1">
                                          <input 
                                            type="number"
+                                           inputMode="numeric"
                                            min="0"
-                                           max={parseInt(qty || 0) + remQty} // Cannot exceed total assigned in Step 2 bounds
+                                           max={parseInt(qty || 0) + remQty}
                                            placeholder="0"
                                            value={qty}
                                            disabled={isExhausted}
                                            onChange={(e) => updateAllocationSizing(garment, alloc.id, category.label, size, e.target.value)}
-                                           className={`w-full bg-transparent border-none text-center font-mono text-lg focus:outline-none transition-colors 
+                                           className={`w-full bg-transparent border-none text-center font-mono text-base focus:outline-none transition-colors py-1
                                             ${isActive ? 'font-bold' : ''} ${remQty !== 0 ? 'text-primary' : (isActive ? 'text-on-surface' : 'text-on-surface/40')}`}
+                                            style={{ fontSize: '16px' }}
                                          />
                                        </div>
                                      </div>
@@ -826,7 +843,7 @@ export default function CustomBuild() {
       {/* Mobile Receipt Toggle */}
       <button 
         onClick={() => setIsMobileReceiptOpen(true)}
-        className="lg:hidden fixed bottom-8 right-8 z-40 bg-primary hover:bg-primary/90 text-on-primary w-14 h-14 rounded-full shadow-[0_8px_32px_rgba(145,40,37,0.5)] flex items-center justify-center transition-transform hover:scale-105 border border-black/20"
+        className="lg:hidden fixed top-24 right-8 z-40 bg-primary hover:bg-primary/90 text-on-primary w-14 h-14 rounded-full shadow-[0_8px_32px_rgba(145,40,37,0.5)] flex items-center justify-center transition-transform hover:scale-105 border border-black/20"
       >
         <span className="material-symbols-outlined text-3xl">receipt_long</span>
       </button>

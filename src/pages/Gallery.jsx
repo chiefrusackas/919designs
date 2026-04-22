@@ -63,7 +63,7 @@ export default function Gallery() {
             Showcase
           </div>
           <h1 className="text-6xl md:text-8xl font-black uppercase text-on-surface leading-none tracking-tighter">
-            Gallery
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-on-surface to-surface-variant">Gallery.</span>
           </h1>
           <p className="text-sm md:text-base text-on-surface-variant max-w-lg mt-6 font-light">
             Recent work from our manufacturing floor. Pin your favorites to the top to configure your inspiration board. Showing latest 100 uploads.

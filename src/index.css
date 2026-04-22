@@ -40,7 +40,14 @@
     font-family: var(--font-body);
     background-color: var(--color-background);
     color: var(--color-on-surface);
-    min-height: max(884px, 100dvh);
+    min-height: 100dvh;
+    -webkit-tap-highlight-color: transparent;
+    -webkit-text-size-adjust: 100%;
+  }
+
+  /* Prevent iOS Safari auto-zoom on input focus — must be >= 16px */
+  input, select, textarea {
+    font-size: 16px;
   }
 
   /* Force number input arrows to render light */
@@ -53,9 +60,17 @@
     opacity: 1;
     filter: brightness(1.7) contrast(1.5);
   }
+
+  /* Smooth momentum scrolling for overflowing containers on iOS */
+  .overflow-y-auto, .overflow-y-scroll {
+    -webkit-overflow-scrolling: touch;
+  }
 }
 
 @keyframes scale-up {
   0% { transform: scale(1); }
   100% { transform: scale(1.02); }
 }
+
+/* ── PAGE TRANSITION CONTAINER (used by GlobalWipe.jsx via inline styles) ── */
+/* All wipe panel styles are now applied directly via DOM ref for GPU performance */

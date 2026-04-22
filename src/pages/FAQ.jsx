@@ -20,8 +20,9 @@ export default function FAQ() {
         <span className="w-4 h-[1px] bg-primary"></span>
         Specs
       </div>
-      <h1 className="text-6xl md:text-8xl font-black uppercase text-on-surface leading-none tracking-tighter mb-16 relative gap-8">
-        Technical<br/>FAQ
+      <h1 className="text-6xl md:text-8xl font-black uppercase text-on-surface leading-none tracking-tighter mb-16 relative">
+        Technical<br/>
+        <span className="text-transparent bg-clip-text bg-gradient-to-r from-on-surface to-surface-variant">FAQ.</span>
       </h1>
 
       <div className="max-w-3xl w-full border-t border-outline/20">

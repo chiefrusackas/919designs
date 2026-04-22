@@ -49,10 +49,21 @@ collections:
     slug: "{{slug}}"
     fields:
       - { label: "Name", name: "name", widget: "string" }
-      - { label: "Category", name: "category", widget: "select", options: ["Hats", "T-Shirts", "Hoodies", "Jackets", "More"] }
+      - { label: "Category", name: "category", widget: "select", options: ["Hats", "T-Shirts", "Polo Shirts", "Long Sleeve Shirts", "Hoodies", "Sweatshirts", "Other"] }
       - { label: "Price", name: "price", widget: "string", default: "$0.00" }
       - { label: "Status", name: "status", widget: "string", default: "In Stock" }
       - { label: "Image", name: "image", widget: "image", required: false }
+      - { label: "Deactivate (Out of Stock)", name: "out_of_stock", widget: "boolean", default: false, required: false }
+      - label: "Available Colors"
+        name: "colors"
+        widget: "list"
+        required: false
+        field: { label: "Color", name: "color", widget: "string" }
+      - label: "Available Sizes"
+        name: "sizes"
+        widget: "list"
+        required: false
+        field: { label: "Size", name: "size", widget: "string" }
 
   - name: gallery
     label: "Gallery Photos"

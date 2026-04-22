@@ -1,0 +1,35 @@
+{
+  "name": "Fireproof Long Sleeve Shirt",
+  "category": "Long Sleeve Shirts",
+  "price": "$85.00",
+  "status": "Special Order",
+  "image": "",
+  "sizes": [
+    {
+      "size": "S"
+    },
+    {
+      "size": "M"
+    },
+    {
+      "size": "L"
+    },
+    {
+      "size": "XL"
+    },
+    {
+      "size": "2XL"
+    }
+  ],
+  "colors": [
+    {
+      "color": "Black"
+    },
+    {
+      "color": "White"
+    },
+    {
+      "color": "Gray"
+    }
+  ]
+}

@@ -1,0 +1,35 @@
+{
+  "name": "Carhartt Hoodie",
+  "category": "Hoodies",
+  "price": "$95.00",
+  "status": "In Stock",
+  "image": "",
+  "sizes": [
+    {
+      "size": "S"
+    },
+    {
+      "size": "M"
+    },
+    {
+      "size": "L"
+    },
+    {
+      "size": "XL"
+    },
+    {
+      "size": "2XL"
+    }
+  ],
+  "colors": [
+    {
+      "color": "Black"
+    },
+    {
+      "color": "White"
+    },
+    {
+      "color": "Gray"
+    }
+  ]
+}

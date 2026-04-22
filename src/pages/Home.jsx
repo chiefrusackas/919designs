@@ -3,10 +3,12 @@ import { Helmet } from 'react-helmet-async';
 
 export default function Home() {
   const categories = [
-    { name: 'Hats', id: 'hats', description: 'Premium stitched technical headwear.' },
-    { name: 'T-Shirts', id: 'tshirts', description: 'Heavyweight organic cotton staples.' },
-    { name: 'Hoodies', id: 'hoodies', description: 'Engineered for comfort and durability.' },
-    { name: 'Other', id: 'other', description: 'Accessories and unique collaborative runs.' },
+    { name: 'Hats', id: 'hats', description: 'Premium technical headwear.' },
+    { name: 'T-Shirts', id: 'tshirts', description: 'Heavyweight organic staples.' },
+    { name: 'Hoodies', id: 'hoodies', description: 'High-density comfort gear.' },
+    { name: 'Polo Shirts', id: 'polo-shirts', description: 'Elevated foundation wear.' },
+    { name: 'Sweatshirts', id: 'sweatshirts', description: 'Modern athletic silhouettes.' },
+    { name: '...and More!', id: 'more', description: 'Accessories & collaborations.' },
   ];
 
   return (
@@ -17,7 +19,7 @@ export default function Home() {
       </Helmet>
 
       {/* Intro Section */}
-      <div className="max-w-4xl mb-16">
+      <div className="max-w-4xl mb-12">
         <div className="text-xs tracking-[0.3em] text-primary-container font-bold uppercase mb-4 flex items-center gap-2">
           <span className="w-4 h-[1px] bg-primary"></span>
           919 Designs
@@ -31,41 +33,51 @@ export default function Home() {
         </p>
       </div>
 
-      {/* Featured Photos Section */}
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-8 w-full mt-8 pt-8">
+      {/* Large Hero Image Space */}
+      <div className="w-full aspect-[21/9] md:aspect-[3/1] bg-surface-variant/30 overflow-hidden mb-24 relative rounded-sm border border-outline/10 shadow-2xl">
+        <img 
+          src="/Users/seth/.gemini/antigravity/brain/2a7750b8-e1df-4385-8562-c3700bcaf823/919designs_home_hero_v1_1776814092380.png" 
+          alt="919 Designs Studio Hero" 
+          className="w-full h-full object-cover opacity-80 scale-105"
+        />
+        <div className="absolute inset-0 bg-gradient-to-t from-background via-transparent to-transparent opacity-60"></div>
+      </div>
+
+      {/* Category Grid Section */}
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 w-full mt-8">
         {categories.map((cat, idx) => (
           <Link
-            to="/products"
+            to={`/products#${cat.id}`}
             key={cat.id}
-            className={`group flex flex-col relative overflow-hidden bg-surface-variant/30 p-8 min-h-[300px] transition-all duration-500 hover:bg-surface-variant/50 shadow-inner ${idx === 0 || idx === 3 ? 'md:col-span-1' : 'md:col-span-1'}`}
+            className="group flex flex-col relative overflow-hidden bg-surface-variant/20 p-8 min-h-[250px] transition-all duration-500 hover:bg-surface-variant/40 shadow-sm hover:shadow-2xl border border-outline/5 hover:border-primary/20"
           >
-            {/* Background Image / Placeholder layer */}
-            <div className="absolute inset-0 bg-surface-variant/20 group-hover:bg-surface-variant/40 transition-colors z-0 flex items-center justify-center overflow-hidden">
-               {/* Note: Insert generated image here later if needed */}
-               <span className="material-symbols-outlined text-[120px] text-on-surface/5 transform group-hover:scale-110 transition-transform duration-700">
-                  checkroom
+            {/* Background Icon Layer */}
+            <div className="absolute inset-0 z-0 flex items-center justify-center overflow-hidden">
+               <span className="material-symbols-outlined text-[100px] text-on-surface/5 transform group-hover:scale-125 transition-transform duration-1000 rotate-12 group-hover:rotate-0">
+                  {cat.id === 'hats' ? 'hat' : 'checkroom'}
                </span>
             </div>
 
             {/* Content Layer */}
             <div className="relative z-10 flex flex-col h-full justify-between pointer-events-none">
               <div className="flex justify-between items-start">
-                 <h2 className="text-4xl font-bold uppercase tracking-tight text-on-surface group-hover:text-primary transition-colors">
+                 <h2 className="text-3xl font-black uppercase tracking-tighter text-on-surface group-hover:text-primary transition-colors duration-300">
                    {cat.name}
                  </h2>
-                 <span className="material-symbols-outlined text-on-surface-variant group-hover:text-primary transition-colors">
+                 <span className="material-symbols-outlined text-on-surface-variant group-hover:text-primary transition-colors transform group-hover:translate-x-1 group-hover:-translate-y-1">
                    arrow_outward
                  </span>
               </div>
               
               <div className="mt-8">
-                 <p className="text-sm text-on-surface-variant max-w-[80%] font-light">
+                 <p className="text-[10px] tracking-widest text-on-surface-variant uppercase font-bold mb-2 opacity-60">Section 0{idx + 1}</p>
+                 <p className="text-sm text-on-surface-variant max-w-[90%] font-light tracking-wide">
                    {cat.description}
                  </p>
               </div>
             </div>
             
-            <div className="absolute bottom-0 left-0 w-full h-[2px] bg-gradient-to-r from-primary to-transparent transform scale-x-0 group-hover:scale-x-100 transition-transform duration-500 origin-left"></div>
+            <div className="absolute bottom-0 left-0 w-full h-[3px] bg-gradient-to-r from-primary to-transparent transform scale-x-0 group-hover:scale-x-100 transition-transform duration-500 origin-left"></div>
           </Link>
         ))}
       </div>

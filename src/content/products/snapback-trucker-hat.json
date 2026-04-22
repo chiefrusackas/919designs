@@ -1,9 +1,10 @@
 {
-  "name": "Signature Dad Hat",
+  "name": "Snapback Trucker Hat",
   "category": "Hats",
-  "price": "$25.00",
+  "price": "$28.00",
   "status": "In Stock",
   "image": "",
+  "out_of_stock": true,
   "sizes": [
     {
       "size": "One Size"
