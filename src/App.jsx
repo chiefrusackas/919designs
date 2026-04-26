@@ -7,6 +7,7 @@ const Home = lazy(() => import('./pages/Home'));
 const Products = lazy(() => import('./pages/Products'));
 const CustomBuild = lazy(() => import('./pages/CustomBuild'));
 const Gallery = lazy(() => import('./pages/Gallery'));
+const FAQ = lazy(() => import('./pages/FAQ'));
 
 function AdminRedirect() {
   useEffect(() => {
@@ -26,6 +27,7 @@ function App() {
               <Route path="products" element={<Products />} />
               <Route path="configurator" element={<CustomBuild />} />
               <Route path="gallery" element={<Gallery />} />
+              <Route path="faq" element={<FAQ />} />
             </Route>
             {/* Redirect for Decap CMS */}
             <Route path="/admin" element={<AdminRedirect />} />

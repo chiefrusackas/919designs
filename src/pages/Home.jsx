@@ -26,7 +26,7 @@ export default function Home() {
         </div>
         <h1 className="text-6xl md:text-8xl font-black uppercase text-on-surface leading-none tracking-tighter mb-8 relative">
           Stitching<br />
-          <span className="text-surface-variant-focus text-transparent bg-clip-text bg-gradient-to-r from-on-surface to-surface-variant">The Future.</span>
+          <span className="text-transparent bg-clip-text bg-gradient-to-r from-on-surface to-surface-variant">The Future.</span>
         </h1>
         <p className="text-lg md:text-xl text-on-surface-variant max-w-2xl font-light">
           We manufacture high-end apparel tailored for creators, rebels, and visionaries. Explore our foundational categories below.
@@ -34,12 +34,8 @@ export default function Home() {
       </div>
 
       {/* Large Hero Image Space */}
-      <div className="w-full aspect-[21/9] md:aspect-[3/1] bg-surface-variant/30 overflow-hidden mb-24 relative rounded-sm border border-outline/10 shadow-2xl">
-        <img 
-          src="/Users/seth/.gemini/antigravity/brain/2a7750b8-e1df-4385-8562-c3700bcaf823/919designs_home_hero_v1_1776814092380.png" 
-          alt="919 Designs Studio Hero" 
-          className="w-full h-full object-cover opacity-80 scale-105"
-        />
+      <div className="w-full aspect-[21/9] md:aspect-[3/1] bg-surface-variant/30 overflow-hidden mb-24 relative rounded-sm border border-outline/10 shadow-2xl flex items-center justify-center">
+        <span className="material-symbols-outlined text-[80px] text-on-surface/10">precision_manufacturing</span>
         <div className="absolute inset-0 bg-gradient-to-t from-background via-transparent to-transparent opacity-60"></div>
       </div>
 
